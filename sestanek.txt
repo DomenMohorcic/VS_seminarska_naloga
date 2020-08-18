@@ -1,0 +1,28 @@
+vzemi ceno in stroške skupaj
+
+oddaljenost, povrsina, zunanjeP, parkirišča, sobe, nadstropje, letogradnje (\/) -zvezne
+shramba, opremljenost -diskretne
+
+Summary:
+opisna statistika (min, max, avg, median (bolje kot avg), kvartili, deviacija...)
+za kategorične -> samo graf?
+shramba -> da/ne, frekvence/%, razpon?, interkvartilna razdalja
+
+letoGradnje, površina, zunanja površina, cena, oddaljenost -> shapiro test (normalnost)
+simetričnost (symmetry.test)
+
+
+osnovna korelacijksa analiza
+f statistika -> ali je linearno ok
+r^2 adj
+
+
+naredi:
+opisna, grafi, interpretacija
+lm
+scatter plot -> http://www.sthda.com/english/wiki/scatter-plot-matrices-r-base-graphs
+korelacijska matrika -> kako vplivajo spremenljivke med sabo (core, cor?)
+
+predpostavke:
+prediktorji so linearno povezani
+y je lin kombinacija
