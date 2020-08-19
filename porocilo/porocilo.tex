@@ -1,8 +1,9 @@
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage[slovene]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{eurosym}
 
 \begin{document}
 
@@ -11,6 +12,30 @@
 \maketitle
 
 \section{Uvod}
+
+Ko se povprečen Slovenec odseli od staršev v svoje stanovanje, je star 28,2
+leti (\href{https://www.stat.si/statweb/News/Index/7570}{stat.si}). Pred
+izselitvijo pa si mora stanovanje poiskati. Po navadi ljudje pri izbiri
+stanovanja gledajo na to, ali jim je stanovanje všeč in ali se jim zdi cena
+ustrezna stanovanju. Od česa pa sploh je odvisna cena stanovanja? Friškovec
+(2010)[1] ugotavlja, da je oglaševalska cena stanovanja
+pozitivno odvisna od površine, števila kopalnic in ali gre za mansardno
+stanovanje, negativno pa predvsem od višine nadstropja. Repič (2014)[2] pa je
+v magistrski nalogi pokazala, da je prodajna cena stanovanja pozitivno odvisna
+od prisotnosti dvigala, parkirnega mesta, opremljenosti stanovanja, bližine
+središča Ljubljane in števila sob v stanovanju, negativno pa na ceno vplivajo
+starost stanovanja, površina in trajanje, ko je nepremičnina na voljo za
+prodajo.
+
+V Sloveniji v najemniških stanovanjih živi le 2,4
+gospodinjstev (\href{https://cekin.si/nepremicnine/trnova-pot-do-lastnega-doma-zakaj-mora-biti-tako.html}{cekin.si}).
+Kljub temu je trg najema nepremičnin kar velik, še posebej v Ljubljani (na
+nepremicnine.net je od 1500 oglasov za najem, od tega kar 1000 v Ljubljani),
+kjer pa so najbolj zaželjeni študentje ali posamezniki. Nikjer pa nisem
+zasledil raziskave, ki bi ugotavljala, kaj vpliva na ceno najema.
+
+Namen seminarske naloge je ugotoviti, kateri dejavniki najbolj vplivajo na ceno
+najemnin v Ljubljanskima predeloma Vič in Rudnik.
 
 \section{Podatki}
 
@@ -30,21 +55,50 @@ z orodjem \href{https://www.distance.to/}{distance.to}.
 
 \subsection{Opis podatkov}
 
-Zvezne spremenljivke
+Zvezne spremenljivke so naslednje:
 \begin{center}
-\begin{tabular}{ c|c c c c c c c }
+\begin{tabular}{ c|c|c}
+	spremenljivka & opis & enota \\
+	\hline
+	\hline
+	nadstropje & V katerem nadstropju se stanovanje nahaja & - \\
+	\hline
+	vsaNadstropja & Število vseh nadstropij v stavbi & - \\
+	\hline
+	letoGradnje & Leto, v katerem je bilo stanovanje zgrajeno & - \\
+	\hline
+	letoPrenove & Leto, v katerem je bilo stanovanje prenovljeno & - \\
+	\hline
+	stSob & Število sob v stanovanju & - \\
+	\hline
+	stParkirisc & Število parkirnih mest, ki pripadajo stanovanju & - \\
+	\hline
+	zunanjePovrsine & Vsota zunanjih površin stanovanja & $ m^{2} $ \\
+	\hline
+	povrsina & Velikost bivalne površine v stanovanju & $ m^{2} $ \\
+	\hline
+	oddaljenost & Oddaljenost stanovanja od Prešernovega trga & km \\
+	\hline
+	cena & Cena mesečne najemnine stanovanja & \euro \\
+	\hline
+	stroski & Cena mesečnih stroškov bivanja & \euro \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ c|ccccccc }
 	spremenljivka & min & 1. kvartil & mediana & 3. kvartil & max & povpr. \\
 	\hline
-	nadstropje & 0 & 0 & 1 & 2 & 7 & 1.505 \\
-	vsaNadstropja & 1 & 2 & 2 & 3.5 & 9 & 2.689 \\
+	nadstropje & 0 & 0 & 1 & 2 & 7 & 1,505 \\
+	vsaNadstropja & 1 & 2 & 2 & 3,5 & 9 & 2,689 \\
 	letoGradnje & 1895 & 1970 & 1995 & 2006 & 2020 & 1986 \\
-	stSob & 1 & 1 & 2 & 3 & 4 & 2.228 \\
-	stParkirisc & 0 & 0 & 1 & 1 & 5 & 0.796 \\
-	zunanjePovrsine & 0 & 0 & 4.5 & 14.5 & 600 & 34.690 \\
-	povrsina & 10 & 38.6 & 65 & 91.5 & 150 & 67.75 \\
-	oddaljenost & 0.97 & 1.855 & 2.18 & 3.12 & 5.07 & 2.53 \\
-	cena & 130 & 515 & 750 & 950 & 3100 & 879.6 \\
-	stroski & 0 & 0 & 0 & 100 & 600 & 60.49 \\
+	stSob & 1 & 1 & 2 & 3 & 4 & 2,228 \\
+	stParkirisc & 0 & 0 & 1 & 1 & 5 & 0,796 \\
+	zunanjePovrsine & 0 & 0 & 4,5 & 14,5 & 600 & 34,690 \\
+	povrsina & 10 & 38,6 & 65 & 91,5 & 150 & 67,75 \\
+	oddaljenost & 0,97 & 1,855 & 2,18 & 3,12 & 5,07 & 2,53 \\
+	cena & 130 & 515 & 750 & 950 & 3100 & 879,6 \\
+	stroski & 0 & 0 & 0 & 100 & 600 & 60,49 \\
 \end{tabular}
 \end{center}
 
@@ -55,7 +109,7 @@ Diskretne spremenljivke
 	\hline
 	shramba & 51 & 52 \\
 	\hline
-	 & 49.5\% & 50.5\% \\
+	 & 49,5\% & 50,5\% \\
 \end{tabular}
 \end{center}
 \begin{center}
@@ -64,7 +118,7 @@ Diskretne spremenljivke
 	\hline
 	opremljenost & 92 & 8 & 3 \\
 	\hline
-	 & 89.3\% & 7.8\% & 2.9\% \\
+	 & 89,3\% & 7,8\% & 2,9\% \\
 \end{tabular}
 \end{center}
 
@@ -74,6 +128,13 @@ Diskretne spremenljivke
 
 \section{Literatura}
 
+[0]
 https://www.distance.to/
+
+[1] Analiza dejavnikov oglaševanih cen rabljenih stanovanj v Ljubljani in njeni
+okolici, Sonja Friškovec, Aleksander Janeš, Univerza na Primorskem, jesen 2010
+
+[2] Dejavniki oblikovanja prodajnih cen stanovanj, Mojca Repič, Ljubljana,
+oktober 2014
 
 \end{document}
