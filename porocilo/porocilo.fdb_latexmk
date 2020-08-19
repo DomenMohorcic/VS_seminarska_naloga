@@ -1,8 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1597764649 "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf" "porocilo" 1597764671
+["pdflatex"] 1597816509 "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf" "porocilo" 1597818452
   "C:/Users/dmoho/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1587914256 10518601 9e5971af07f597f09df2c49dbe066c19 ""
   "C:/Users/dmoho/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1590867439 83751 6e4565e2a96ca36e797cc3ed7d4e67f8 ""
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -55,15 +56,15 @@
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/tex/latex/refcount/refcount.sty" 1576437552 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575574882 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.aux" 1597764650 1248 5de2a6d8215d595e133a53271ccb8e6a ""
-  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" 1597764670 1053 0c1f00c25f2dd6c805c530d9cdde2a95 ""
-  "porocilo.aux" 1597764650 1248 5de2a6d8215d595e133a53271ccb8e6a "pdflatex"
-  "porocilo.out" 1597764650 213 45d451e632116d0059c439bb0d6204b0 "pdflatex"
-  "porocilo.tex" 1597764670 1053 0c1f00c25f2dd6c805c530d9cdde2a95 ""
+  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.aux" 1597816509 1368 22c5556047905f878999d1b88664e1ef ""
+  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" 1597818451 2396 4a5811c94db051fe98b574b6deedd6cc ""
+  "porocilo.aux" 1597816509 1368 22c5556047905f878999d1b88664e1ef "pdflatex"
+  "porocilo.out" 1597816509 275 c8182427ae30258243c44dbe36a4f6e9 "pdflatex"
+  "porocilo.tex" 1597818451 2396 4a5811c94db051fe98b574b6deedd6cc ""
   (generated)
   "porocilo.out"
   "porocilo.pdf"
+  "porocilo.aux"
   "porocilo.log"
   "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf"
-  "porocilo.aux"
   "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.log"

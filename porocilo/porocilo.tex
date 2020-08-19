@@ -21,14 +21,59 @@ Pri pregledovanju oglasov sem se osredotočil na naslednje spremenljivke:
 nadstropje, število vseh nadstropij, leto gradnje, leto prenove, število sob,
 ali ima stanovanje shrambo/klet, ali je stanovanje opremljeno, število
 pripadajočih parkirišč, površina, zunanje površine (balkon, vrt, \dots),
-mesečni stroški in cena najema. Ker pa sem hotel tudi ugotoviti, ali
+mesečni stroški in cena najema. Ker pa sem hotel ugotoviti, ali
 na ceno najema vpliva tudi lokacija stanovanja, sem poiskal še oddaljenost
-do središča Ljubljane (v mojem primeru Prešernov trg).
+do središča Ljubljane (v mojem primeru Prešernov trg). Na prej omenjeni spletni
+strani pa v večini primerov ni napisanega točnega naslova, zato sem iskal samo
+približne lokacije (ulica ali naselje). Pri določanju razdalje sem si pomagal
+z orodjem \href{https://www.distance.to/}{distance.to}.
+
+\subsection{Opis podatkov}
+
+Zvezne spremenljivke
+\begin{center}
+\begin{tabular}{ c|c c c c c c c }
+	spremenljivka & min & 1. kvartil & mediana & 3. kvartil & max & povpr. \\
+	\hline
+	nadstropje & 0 & 0 & 1 & 2 & 7 & 1.505 \\
+	vsaNadstropja & 1 & 2 & 2 & 3.5 & 9 & 2.689 \\
+	letoGradnje & 1895 & 1970 & 1995 & 2006 & 2020 & 1986 \\
+	stSob & 1 & 1 & 2 & 3 & 4 & 2.228 \\
+	stParkirisc & 0 & 0 & 1 & 1 & 5 & 0.796 \\
+	zunanjePovrsine & 0 & 0 & 4.5 & 14.5 & 600 & 34.690 \\
+	povrsina & 10 & 38.6 & 65 & 91.5 & 150 & 67.75 \\
+	oddaljenost & 0.97 & 1.855 & 2.18 & 3.12 & 5.07 & 2.53 \\
+	cena & 130 & 515 & 750 & 950 & 3100 & 879.6 \\
+	stroski & 0 & 0 & 0 & 100 & 600 & 60.49 \\
+\end{tabular}
+\end{center}
+
+Diskretne spremenljivke
+\begin{center}
+\begin{tabular}{ c|c c }
+	 & da & ne \\
+	\hline
+	shramba & 51 & 52 \\
+	\hline
+	 & 49.5\% & 50.5\% \\
+\end{tabular}
+\end{center}
+\begin{center}
+\begin{tabular}{ c|c c c }
+	 & da & delno & ne \\
+	\hline
+	opremljenost & 92 & 8 & 3 \\
+	\hline
+	 & 89.3\% & 7.8\% & 2.9\% \\
+\end{tabular}
+\end{center}
 
 \section{Rezultati}
 
 \section{Komentar}
 
 \section{Literatura}
+
+https://www.distance.to/
 
 \end{document}

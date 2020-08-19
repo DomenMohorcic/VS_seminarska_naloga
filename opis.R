@@ -2,6 +2,7 @@ library(tidyverse)
 library(psych)
 library(lawstat)
 library(R.utils)
+library(ggplot2)
 
 # nalozi podatke
 setwd('C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/podatki')
@@ -33,3 +34,7 @@ fit <- lm(mesecno~nadstropje+vsaNadstropja+letoGradnje+stSob+stParkirisc+shramba
 summary(fit)
 #reg <- regtabela(fit)
 #kex(reg)
+
+barplot(table(data$nadstropje))
+barplot(table(data$opremljenost))
+

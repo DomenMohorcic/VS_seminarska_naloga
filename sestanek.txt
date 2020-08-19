@@ -4,7 +4,7 @@ oddaljenost, povrsina, zunanjeP, parkirišča, sobe, nadstropje, letogradnje (\/
 shramba, opremljenost -diskretne
 
 Summary:
-opisna statistika (min, max, avg, median (bolje kot avg), kvartili, deviacija...)
+opisna statistika (min, max, avg, median (bolje kot avg), kvartili, deviacija... interkvartilni)
 za kategorične -> samo graf?
 shramba -> da/ne, frekvence/%, razpon?, interkvartilna razdalja
 
@@ -26,3 +26,6 @@ korelacijska matrika -> kako vplivajo spremenljivke med sabo (core, cor?)
 predpostavke:
 prediktorji so linearno povezani
 y je lin kombinacija
+
+skew ti govori o simetričnosti
+kurtosis je o sploščenosti
