@@ -38,7 +38,6 @@ for(val in colnames(data_small[2:6])) {
   printf("w = %f, p = %e\n", shap$statistic, shap$p.value)
   printf("symmetry.test\n")
   printf("Test statistics = %f, p = %e\n", sym$statistic, sym$p.value)
-  printf("%s\n\n", sym$alternative)
 }
 
 # multipla regresija
@@ -55,3 +54,7 @@ summary(fit_small)
 barplot(table(data$nadstropje))
 barplot(table(data$opremljenost))
 
+ggplot(data_small, aes(x=letoGradnje)) + geom_histogram(binwidth = 5, fill="#69b3a2")
+ggplot(data_small, aes(x=povrsina)) + geom_histogram(binwidth = 5, fill="#69b3a2")
+ggplot(data_small, aes(x=oddaljenost)) + geom_histogram(binwidth = 0.15, fill="#69b3a2")
+ggplot(data_small, aes(x=skCena)) + geom_histogram(binwidth = 80, fill="#69b3a2")

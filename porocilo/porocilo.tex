@@ -120,15 +120,33 @@ velikimi vrtovi.
 
 Izmed petih spremenljivk so \textit{letoGradnje}, \textit{povrsina},
 \textit{oddaljenost} in \textit{skCena} zvezne, \textit{parkirisce} pa je
-diskretna. Zbral sem podatke o 103 različnih stanovanjih.
+diskretna. Zbral sem podatke o 103 različnih stanovanjih ($ N = 103 $).
 
 Za vsako zvezno spremenljivko sem izračunal povprečje, standardni odklon,
-mediano absolutnih odstopanj od mediane, simetričnost in sploščenost.
-
-V spodnji tabeli je so predstavljene naslednje lastnosti zveznih spremenljivk:
-minimum (min), maksimum (max), povprečje (avg), mediana (median), standardni
-odklon (sd), mediana absolutnih odstopanj od mediane (MAD), test simetričnosti
-(skew) in test sploščenosti (kurt):
+mediano absolutnih odstopanj od mediane, asimetričnost in sploščenost.
+Povprečje se izračuna po formuli
+\begin{equation}
+	\mu = \frac{\sum\limits_{i=1}^{N} x_{i}}{N}
+\end{equation}
+Standardni odklon se izračuna po formuli
+\begin{equation}
+	\sigma = \sqrt{\frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{2}}{N}}
+\end{equation}
+Mediano absolutnih odstopanj od mediane se izračuna tako, da se izračunajo vse
+razlike podatkov od mediane in poišče mediano razlik. \newline
+Asimetričnost se izračuna po naslednji formuli
+\begin{equation}
+	skew = \frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{3}}{N*\sigma^{3}}
+\end{equation}
+Sploščenost pa se izračuna po formuli
+\begin{equation}
+	kurtosis = \frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{4}}{N*\sigma^{4}}-3
+\end{equation}
+\newline
+V spodnji tabeli je so predstavljene prej omenjene lastnosti zveznih
+spremenljivk: minimum (min), maksimum (max), povprečje (avg), mediana (median),
+standardni odklon (sd), mediana absolutnih odstopanj od mediane (MAD), test
+asimetričnosti (skew) in test sploščenosti (kurt):
 
 \begin{center}
 \begin{tabular}{ c|cccccccc }
@@ -140,7 +158,6 @@ odklon (sd), mediana absolutnih odstopanj od mediane (MAD), test simetričnosti
 	skCena & 160 & 3700 & 940,13 & 700,20 & 800 & 333,58 & 2,17 & 5,28 \\
 \end{tabular}
 \end{center}
-
 Ker pa se vrednosti testa asimetričnosti in sploščenosti zelo razlikujejo
 od $ 0 $, to kaže na nenormalno porazdelitev, in tako nam vrednosti o povprečju
 ali standardnem odklonu povesta bolj malo. Naredil sem še test normalnosti z
@@ -150,20 +167,20 @@ ukazom {\sf shapiro.test()} in test simetričnosti z {\sf symmetry.test()}:
 \begin{tabular}{ c|c|c }
 	& Shapiro-Wilk & MGG \\
 	\hline
-	letoGradnje & 2e-07 & 2020 \\
-	povrsina & 0,002 & 150 \\
-	oddaljenost & 8e-06 & 0 \\
-	skCena & 1e-11 & 3700 \\
+	letoGradnje & 2e-07 & ? \\
+	povrsina & 0,002 & 0,296 \\
+	oddaljenost & 8e-06 & ? \\
+	skCena & 1e-11 & 0,002 \\
 \end{tabular}
 \end{center}
-
 Shapiro-Wilk-ov test nam pove, s kakšno verjetnostjo je naš vzorec normalno
 porazdeljen, če je normalno porazdeljena populacija. V našem primeru ima
 najvišjo verjetnost spremenljivka \textit{povrsina} z 0,2\%, kar pa je premalo,
 da bi lahko sklepali o normalni porazdelitvi. Minimalni prag za sprejem
 hipoteze o normalnosti je namreč 5\%.
 
-MGG (Miao, Gel, and Gastwirth) test simetričnosti pa nam pove
+MGG (Miao, Gel, and Gastwirth) test simetričnosti pa nam testira hipotezo, da
+je naš vzorec simetričen proti alternativni hipotezi, da vzorec ni simetričen.
 
 
 \section{Rezultati}
