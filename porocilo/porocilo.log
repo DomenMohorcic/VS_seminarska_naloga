@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  19 AUG 2020 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  20 AUG 2020 18:36
 entering extended mode
 **c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex
 (c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex
@@ -143,13 +143,32 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip49
-) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eurosym\eurosym.sty"
-Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box45
-) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
+\lst@mode=\count187
+\lst@gtempboxa=\box45
+\lst@token=\toks18
+\lst@length=\count188
+\lst@currlwidth=\dimen140
+\lst@column=\count189
+\lst@pos=\count190
+\lst@lostspace=\dimen141
+\lst@width=\dimen142
+\lst@newlines=\count191
+\lst@lineno=\count192
+\lst@maxwidth=\dimen143
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count193
+\lst@skipnumbers=\count194
+\lst@framebox=\box46
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count187
-\l__pdf_internal_box=\box46
+\l__kernel_color_stack_int=\count195
+\l__pdf_internal_box=\box47
 ) (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.aux)
 \openout1 = `porocilo.aux'.
 
@@ -169,7 +188,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-\AtBeginShipoutBox=\box47
+\AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring OFF on input line 8.
  ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -178,7 +197,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count188
+\c@section@level=\count196
 )
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
@@ -187,6 +206,7 @@ LaTeX Info: Redefining \nameref on input line 8.
 \@outlinefile=\write3
 \openout3 = `porocilo.out'.
 
+\c@lstlisting=\count197
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -200,39 +220,39 @@ Overfull \hbox (6.39311pt too wide) in paragraph at lines 42--55
 
 {C:/Users/dmoho/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 60.
+(Font)              <12> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 60.
+(Font)              <8> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 60.
-
-Overfull \hbox (0.48526pt too wide) in paragraph at lines 60--86
+(Font)              <6> on input line 64.
+ [2]
+Overfull \hbox (16.07066pt too wide) in paragraph at lines 134--142
  [] 
  []
 
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
  (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
 Package rerunfilecheck Info: File `porocilo.out' has not changed.
-(rerunfilecheck)             Checksum: C8182427AE30258243C44DBE36A4F6E9;275.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+(rerunfilecheck)             Checksum: 531C828CBAD133D6159CDD0645EAC0E8;348.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 5152 strings out of 480896
- 83101 string characters out of 2898165
- 358108 words of memory out of 3000000
- 20962 multiletter control sequences out of 15000+200000
- 537316 words of font info for 41 fonts, out of 3000000 for 9000
+ 6432 strings out of 480896
+ 101374 string characters out of 2898165
+ 373379 words of memory out of 3000000
+ 22231 multiletter control sequences out of 15000+200000
+ 537853 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,8n,30p,277b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.pdf (3 pages, 74961 bytes).
+ 34i,7n,36p,278b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.pdf (4 pages, 86819 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,14 +9,15 @@ setwd('C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/podatki')
 stanovanja <- read.csv('stanovanja_vic.csv', sep = ";")
 
 # uredi podatke
-filtered <- select(stanovanja, 1, 4:6, 8:14, 16:18)
+filtered <- select(stanovanja, 1, 4:6, 8:15, 17:19)
 data <- filtered[complete.cases(filtered), ]
 data <- transform(data, nadstropje = as.numeric(nadstropje))
+data_small <- select(data, 1,4,7,11,12,15)
 
 # opisi podatke
-summary(data[2:14])
-describe(data[2:14])
-for(val in colnames(data[2:14])) {
+summary(data[2:15])
+describe(data[2:15])
+for(val in colnames(data[2:15])) {
   shap <- shapiro.test(data[,val])
   sym <- symmetry.test(data[,val])
   printf("%s\n", val)
@@ -26,12 +27,28 @@ for(val in colnames(data[2:14])) {
   printf("Test statistics = %f, p = %e\n", sym$statistic, sym$p.value)
   printf("%s\n\n", sym$alternative)
 }
-cor(data[2:14])
-pairs(data[2:14], lower.panel = NULL)
+round(cor(data[2:12]), 3)
+pairs(data[2:12], lower.panel = NULL)
+
+for(val in colnames(data_small[2:6])) {
+  shap <- shapiro.test(data[,val])
+  sym <- symmetry.test(data[,val])
+  printf("%s\n", val)
+  printf("shapiro.test\n")
+  printf("w = %f, p = %e\n", shap$statistic, shap$p.value)
+  printf("symmetry.test\n")
+  printf("Test statistics = %f, p = %e\n", sym$statistic, sym$p.value)
+  printf("%s\n\n", sym$alternative)
+}
 
 # multipla regresija
-fit <- lm(mesecno~nadstropje+vsaNadstropja+letoGradnje+stSob+stParkirisc+shramba+opremljenost+zunanjePovrsine+povrsina+oddaljenost, data = data)
+fit <- lm(skCena~nadstropje+vsaNadstropja+letoGradnje+stSob+stParkirisc+shramba+opremljenost+zunanjePovrsine+povrsina+oddaljenost, data = data)
+fit <- lm(skCena~letoGradnje+opremljenost+povrsina+oddaljenost+parkirisce, data = data)
 summary(fit)
+
+fit_small <- lm(skCena~letoGradnje+povrsina+oddaljenost+parkirisce, data = data_small)
+summary(fit_small)
+
 #reg <- regtabela(fit)
 #kex(reg)
 
