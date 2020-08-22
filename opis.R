@@ -41,7 +41,7 @@ for(val in colnames(data_small[2:6])) {
 }
 
 # multipla regresija
-fit <- lm(skCena~nadstropje+vsaNadstropja+letoGradnje+stSob+stParkirisc+shramba+opremljenost+zunanjePovrsine+povrsina+oddaljenost, data = data)
+fit <- lm(skCena~nadstropje+vsaNadstropja+letoGradnje+stSob+stParkirisc+parkirisce+shramba+opremljenost+zunanjePovrsine+povrsina+oddaljenost, data = data)
 fit <- lm(skCena~letoGradnje+opremljenost+povrsina+oddaljenost+parkirisce, data = data)
 summary(fit)
 
@@ -51,10 +51,13 @@ summary(fit_small)
 #reg <- regtabela(fit)
 #kex(reg)
 
-barplot(table(data$nadstropje))
-barplot(table(data$opremljenost))
-
 ggplot(data_small, aes(x=letoGradnje)) + geom_histogram(binwidth = 5, fill="#69b3a2")
 ggplot(data_small, aes(x=povrsina)) + geom_histogram(binwidth = 5, fill="#69b3a2")
 ggplot(data_small, aes(x=oddaljenost)) + geom_histogram(binwidth = 0.15, fill="#69b3a2")
 ggplot(data_small, aes(x=skCena)) + geom_histogram(binwidth = 80, fill="#69b3a2")
+
+par(mar=c(2,2,0,0))
+hist(data$letoGradnje, main="")
+hist(data$povrsina, main="")
+hist(data$oddaljenost, main="")
+hist(data$skCena, main="")

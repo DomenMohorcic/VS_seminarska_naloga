@@ -4,6 +4,11 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{ {C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/} }
 
 \begin{document}
 
@@ -97,29 +102,29 @@ Zbrane podatke sem označil z naslednjimi spremenljivkami:
 \end{tabular}
 \end{center}
 
-Za model napovedi mesečne najemnine sem izbral spremenljivke \textit{skCena},
-\textit{parkirisce}, \textit{povrsina}, \textit{letoGradnje} in
-\textit{oddaljenost}. \textit{skCena} je odvisna spremenljivka, ostale štiri pa
+Za model napovedi mesečne najemnine sem izbral spremenljivke $ skCena $,
+$ parkirisce $, $ povrsina $, $ letoGradnje $ in
+$ oddaljenost $. $ skCena $ je odvisna spremenljivka, ostale štiri pa
 so neodvisne.
 
-Spremenljivko \textit{letoPrenove} sem odstranil iz modela, ker za večino
-stanovanj podatka nisem našel. \textit{nadstropje} in \textit{vsaNadstropja}
+Spremenljivko $ letoPrenove $ sem odstranil iz modela, ker za večino
+stanovanj podatka nisem našel. $ nadstropje $ in $ vsaNadstropja $
 sem izvzel, ker pri pregledu oglasov nisem dobil občutka, da bi ti dve
 spremenljivki pomembno vplivali na ceno najemnine. Spremenljivko
-\textit{opremljenost} sem odstranil, ker je bilo $ 89.3\% $ stanovanj
+$ opremljenost $ sem odstranil, ker je bilo $ 89.3\% $ stanovanj
 opremljenih in tako ni bilo dovolj raznolikosti. Pri pregledu korelacijske
-matrike sem ugotovil, da sta spremenljivki \textit{povrsina} in
-\textit{stSob} povezani s korelacijskim koeficientom $ 0.811 $ zato sem obdržal
-spremenljivko \textit{povrsina}. Namesto \textit{stParkirisc} sem uporabil
-spremenljivko \textit{parkirisce}, saj je tako bolje predstavljeno, ali ga
-stanovanje ima. Spremenljivko \textit{zunanjePovrsine} pa sem  odstranil iz
+matrike sem ugotovil, da sta spremenljivki $ povrsina $ in
+$ stSob $ povezani s korelacijskim koeficientom $ 0.811 $ zato sem obdržal
+spremenljivko $ povrsina $. Namesto $ stParkirisc $ sem uporabil
+spremenljivko $ parkirisce $, saj je tako bolje predstavljeno, ali ga
+stanovanje ima. Spremenljivko $ zunanjePovrsine $ pa sem  odstranil iz
 modela, ker je imela večina stanovanj samo balkon, redko pa so se pojavili
 velikimi vrtovi.
 
-\subsection{Analiza spremenljivk}
+\subsection{Analiza podatkov}
 
-Izmed petih spremenljivk so \textit{letoGradnje}, \textit{povrsina},
-\textit{oddaljenost} in \textit{skCena} zvezne, \textit{parkirisce} pa je
+Izmed petih spremenljivk so $ letoGradnje $, $ povrsina $,
+$ oddaljenost $ in $ skCena $ zvezne, $ parkirisce $ pa je
 diskretna. Zbral sem podatke o 103 različnih stanovanjih ($ N = 103 $).
 
 Za vsako zvezno spremenljivko sem izračunal povprečje, standardni odklon,
@@ -133,7 +138,8 @@ Standardni odklon se izračuna po formuli
 	\sigma = \sqrt{\frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{2}}{N}}
 \end{equation}
 Mediano absolutnih odstopanj od mediane se izračuna tako, da se izračunajo vse
-razlike podatkov od mediane in poišče mediano razlik. \newline
+absolutne razlike med podatki in mediano in se poišče mediano razlik.
+\newline
 Asimetričnost se izračuna po naslednji formuli
 \begin{equation}
 	skew = \frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{3}}{N*\sigma^{3}}
@@ -161,29 +167,158 @@ asimetričnosti (skew) in test sploščenosti (kurt):
 Ker pa se vrednosti testa asimetričnosti in sploščenosti zelo razlikujejo
 od $ 0 $, to kaže na nenormalno porazdelitev, in tako nam vrednosti o povprečju
 ali standardnem odklonu povesta bolj malo. Naredil sem še test normalnosti z
-ukazom {\sf shapiro.test()} in test simetričnosti z {\sf symmetry.test()}:
+ukazom {\sf shapiro.test()} (Shapiro-Wilk) in test simetričnosti z
+{\sf symmetry.test()} (MGG):
 
 \begin{center}
 \begin{tabular}{ c|c|c }
 	& Shapiro-Wilk & MGG \\
 	\hline
-	letoGradnje & 2e-07 & ? \\
-	povrsina & 0,002 & 0,296 \\
-	oddaljenost & 8e-06 & ? \\
-	skCena & 1e-11 & 0,002 \\
+	letoGradnje & 2e-07 & 1,32e-05 \\
+	povrsina & 0,002 & 0,344 \\
+	oddaljenost & 8e-06 & 3,82e-07 \\
+	skCena & 1e-11 & 4,22e-04 \\
 \end{tabular}
 \end{center}
 Shapiro-Wilk-ov test nam pove, s kakšno verjetnostjo je naš vzorec normalno
 porazdeljen, če je normalno porazdeljena populacija. V našem primeru ima
-najvišjo verjetnost spremenljivka \textit{povrsina} z 0,2\%, kar pa je premalo,
+najvišjo verjetnost spremenljivka $ povrsina $ z 0,2\%, kar pa je premalo,
 da bi lahko sklepali o normalni porazdelitvi. Minimalni prag za sprejem
 hipoteze o normalnosti je namreč 5\%.
-
+\newline
 MGG (Miao, Gel, and Gastwirth) test simetričnosti pa nam testira hipotezo, da
 je naš vzorec simetričen proti alternativni hipotezi, da vzorec ni simetričen.
+Vse spremenljivke razen $ povrsina $ imajo p vrednost testa zelo majhno,
+zato so nesimetrične. Spremenljivka $ povrsina $ pa je simetrično
+porazdeljena.
+\newline
+Tudi ko pogledamo histograme, vidimo, da so vse spremenljivke nenormalno
+porazdeljene in nesimetrične. Najbližje normalni porazdelitvi je
+$ povrsina $, vendar je bolj nagnjena v desno.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm]{letoGradnje_hist.png}
+	\caption{Leto gradnje}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm]{povrsina_hist.png}
+	\caption{Povrsina}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm]{oddaljenost_hist.png}
+	\caption{Oddaljenost}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6cm]{skCena_hist.png}
+	\caption{Skupna cena}
+\end{figure}
+
+Spremenljivka $ parkirisce $ pa je diskretna, zato jo lahko predstavimo z
+vzorčnim deležem:
+
+\begin{center}
+\begin{tabular}{ c|cc }
+	& da & ne \\
+	\hline
+	parkirisce & 0,544 & 0,456 \\
+\end{tabular}
+\end{center}
 
 
-\section{Rezultati}
+\section{Večkratna regresija}
+
+\subsection{Koeficienti korelacije}
+
+Pri modelu večkratne regresije je najprej potrebno preveriti, kako so
+neodvisne spremenljivke povezane med sabo. Če so povezane preveč, lahko z neko
+spremenljivko opišemo drugo, in tako iz druge ne izvemo nič novega ali pa zelo
+malo o odvisni spremenljivki. Korelacijski koeficient med dvema spremenljivkama
+lahko izračunamo po naslednji formuli:
+\begin{equation}
+	\rho\left(X,Y\right) = \frac{Cov\left(X,Y\right)}{\sigma_{X}\sigma_{Y}} =
+	\frac{E\left(\left(X-E\left(X\right)\right)\left(Y-E\left(Y\right)\right)\right)}{\sigma_{X}\sigma_{Y}}
+\end{equation}
+Koeficient korelacije ima vrednost med $ -1 $ in $ 1 $. Če ima vrednost blizu
+$ 1 $, sta spremenljivki pozitivno povezani, če pa ima vrednost blizu $ -1 $,
+sta negativno povezani. Če vrednost znaša okoli $ 0 $, spremenljivki nista
+povezani.
+\newline
+V spodnji tabeli so predstavljeni korelacijski koeficienti za zvezne
+spremenljivke:
+\begin{center}
+\begin{tabular}{ c|cccc }
+	& letoGradnje & povrsina & oddaljenost & skCena \\
+	\hline
+	letoGradnje & 1.000 & 0.035 & 0.252 & 0.168 \\
+	povrsina & 0.035 & 1.000 & -0.058 & 0.829 \\
+	oddaljenost & 0.252 & -0.058 & 1.000 & -0.100 \\
+	skCena & 0.168 & 0.829 & -0.100 & 1.000 \\
+\end{tabular}
+\end{center}
+Neodvisne spremenljivke $ letoGradnje $, $ povrsina $ in
+$ oddaljenost $ imajo medsebojne koeficiente skoraj $ 0 $ z izjemo
+$ letoGradnje $ in $ oddaljenost $, ki imata pozitiven koeficient
+$ 0.252 $. Spremenljivki sta pozitivno povezani, kar pomeni, da se novejša
+stanovanja nahajajo malo bolj izven središča Ljubljane.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=14cm]{pairs.png}
+	\caption{Grafični prikaz korelacijske matrike}
+\end{figure}
+
+\subsection{Večkratna regresija}
+
+Linearna regresija je analiza, pri kateri ugotavljamo funkcijsko zvezo med
+dvema spremenljivkama, pri večkratni regresiji pa funkcijsko zvezo med več
+spremenljivkami, kjer je ena odvisna, ostale pa neodvisne. Cilj analize je
+najti linearno funkcijo, ki najbolje opiše obnašanje odvisne spremenljivke v
+odvisnosti od ostalih spremenljivk.
+\newline
+Neodvinsne spremenljivke so $ letoGradnje $, $ povrsina $,
+$ oddaljenost $, $ parkirisce $. Odvisna spremenljivka je
+$ skCena $. Funkcija bo izgledala tako:
+\begin{equation}
+	skCena = a+b*letoGradnje+c*povrsina+d*oddaljenost+e*parkirisce+\epsilon
+\end{equation}
+$ b, c, d $ in $ e $ so koeficienti posameznih neodvisnih spremenljivk. $ a $
+predstavlja začetno vrednost, sam po sebi pa nima smisla (stanovanje z $ 0 $ v
+pri vseh neodvisnih spremenljivkah bi imelo $ a $ mesečne najemnine, tako
+stanovanje pa ne obstaja). $ \epsilon $ predstavlja naključno napako.
+\newline
+Večkratno regresijo sem določil z ukazom \\
+{\sf lm(skCena$\sim$letoGradnje+povrsina+oddaljenost+parkirisce, data=data)}. \\
+Dobil sem naslednje podatke:
+\begin{lstlisting}[language=R,basicstyle=\small]
+Call:
+lm(formula = skCena ~ letoGradnje + povrsina + oddaljenost + 
+    parkirisce, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-765.48 -203.91   -9.88  159.84 1283.37 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -8806.067   2660.228  -3.310  0.00131 ** 
+letoGradnje     4.499      1.353   3.325  0.00124 ** 
+povrsina       15.714      1.020  15.410  < 2e-16 ***
+oddaljenost   -60.497     38.036  -1.591  0.11494    
+parkirisce   -184.771     79.226  -2.332  0.02174 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 371.6 on 98 degrees of freedom
+Multiple R-squared:  0.7293,	Adjusted R-squared:  0.7183 
+F-statistic: 66.01 on 4 and 98 DF,  p-value: < 2.2e-16
+\end{lstlisting}
+
 
 \section{Komentar}
 
@@ -197,5 +332,8 @@ okolici, Sonja Friškovec, Aleksander Janeš, Univerza na Primorskem, jesen 2010
 
 [2] Dejavniki oblikovanja prodajnih cen stanovanj, Mojca Repič, Ljubljana,
 oktober 2014
+
+[3] \href{https://www.researchgate.net/publication/239329925_A_New_Test_of_Symmetry_about_an_Unknown_Median}
+enačba 11
 
 \end{document}

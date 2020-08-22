@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  20 AUG 2020 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  22 AUG 2020 20:50
 entering extended mode
 **c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex
 (c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex
@@ -165,31 +165,116 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen144
+)) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen145
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
+\dotsspace@=\muskip17
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
+\tag@help=\toks20
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
+\andhelp@=\toks21
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count273
+\float@exts=\toks24
+\float@box=\box49
+\@float@everytoks=\toks25
+\@floatcapt=\box50
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count195
-\l__pdf_internal_box=\box47
+\l__kernel_color_stack_int=\count274
+\l__pdf_internal_box=\box51
 ) (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.aux)
 \openout1 = `porocilo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-\AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+\AtBeginShipoutBox=\box52
+Package hyperref Info: Link coloring OFF on input line 13.
  ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
@@ -197,62 +282,177 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count196
+\c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
  (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.out) (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.out)
 \@outlinefile=\write3
 \openout3 = `porocilo.out'.
 
-\c@lstlisting=\count197
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
-
-Overfull \hbox (6.39311pt too wide) in paragraph at lines 42--55
+\c@lstlisting=\count276
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count277
+\scratchdimen=\dimen155
+\scratchbox=\box53
+\nofMPsegments=\count278
+\nofMParguments=\count279
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count280
+\MPscratchDim=\dimen156
+\MPnumerator=\count281
+\makeMPintoPDFobject=\count282
+\everyMPtoPDFconversion=\toks27
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (6.39311pt too wide) in paragraph at lines 47--60
 \OT1/cmr/m/n/12 Podatke sem pri-do-bil iz slo-ven-ske sple-tne strani []ne-pre-mic-nine.net[] dne 8.8.2020.
  []
 
 [1
 
-{C:/Users/dmoho/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 64.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 64.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 64.
- [2]
-Overfull \hbox (16.07066pt too wide) in paragraph at lines 152--160
+{C:/Users/dmoho/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (16.07066pt too wide) in paragraph at lines 158--166
  [] 
  []
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png, id=69, 301.125pt x 231.11343pt>
+File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png Graphic file (type png)
+<use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png>
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png  used on input line 201.
+(pdftex.def)             Requested size: 170.71652pt x 131.03072pt.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png, id=75, 301.125pt x 231.11343pt>
+File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png Graphic file (type png)
+<use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png>
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png  used on input line 207.
+(pdftex.def)             Requested size: 170.71652pt x 131.03072pt.
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png, id=76, 301.125pt x 231.11343pt>
+File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png Graphic file (type png)
+<use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png>
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png  used on input line 213.
+(pdftex.def)             Requested size: 170.71652pt x 131.03072pt.
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png, id=77, 301.125pt x 231.11343pt>
+File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png Graphic file (type png)
+<use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png>
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png  used on input line 219.
+(pdftex.def)             Requested size: 170.71652pt x 131.03072pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.222 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.222 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.222 
+       <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 235.
+
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png, id=88, 451.6875pt x 346.29375pt>
+File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png Graphic file (type png)
+<use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png>
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png  used on input line 272.
+(pdftex.def)             Requested size: 398.33858pt x 305.41049pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 272--273
+ [][] 
+ []
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.274 \end{figure}
+                   <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 276.
+
+
+Overfull \hbox (4.41628pt too wide) in paragraph at lines 278--287
+\OT1/cmr/m/n/12 Neodvinsne spre-men-ljivke so $\OML/cmm/m/it/12 letoGradnje$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 povrsina$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 oddaljenost$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 parkirisce$\OT1/cmr/m/n/12 .
+ []
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.289 \end{equation}
+                     <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png>] ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang2.sty"
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang3.sty"
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+Overfull \hbox (4.2041pt too wide) in paragraph at lines 300--301
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 308.
+("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 308.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 308.
+ ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
+
+Overfull \hbox (17.34424pt too wide) in paragraph at lines 315--317
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
  (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
 Package rerunfilecheck Info: File `porocilo.out' has not changed.
-(rerunfilecheck)             Checksum: 531C828CBAD133D6159CDD0645EAC0E8;348.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
+(rerunfilecheck)             Checksum: 1D6743F66E74FB9F51963941EF14D663;493.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
  ) 
 Here is how much of TeX's memory you used:
- 6436 strings out of 480896
- 101422 string characters out of 2898165
- 373379 words of memory out of 3000000
- 22231 multiletter control sequences out of 15000+200000
- 537853 words of font info for 42 fonts, out of 3000000 for 9000
+ 9478 strings out of 480896
+ 138876 string characters out of 2898165
+ 600119 words of memory out of 3000000
+ 25146 multiletter control sequences out of 15000+200000
+ 543011 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,7n,36p,278b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.pdf (4 pages, 125084 bytes).
+ 34i,7n,42p,323b,2027s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.pdf (9 pages, 190437 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
