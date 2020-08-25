@@ -3,6 +3,8 @@ library(psych)
 library(lawstat)
 library(R.utils)
 library(ggplot2)
+library(car)
+library(lmtest)
 
 # nalozi podatke
 setwd('C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/podatki')
@@ -45,7 +47,27 @@ fit <- lm(skCena~nadstropje+vsaNadstropja+letoGradnje+stSob+stParkirisc+parkiris
 fit <- lm(skCena~letoGradnje+opremljenost+povrsina+oddaljenost+parkirisce, data = data)
 summary(fit)
 
+data_small$letoGradnje_SQ = data_small$letoGradnje*data_small$letoGradnje
+data_small$letoGradnje_SQRT = sqrt(data_small$letoGradnje)
+data_small$letoGradnje_LOG = log(data_small$letoGradnje)
+data_small$povrsina_SQ = data_small$povrsina*data_small$povrsina
+data_small$povrsina_SQRT = sqrt(data_small$povrsina)
+data_small$povrsina_LOG = log(data_small$povrsina)
+data_small$povrsina_EXP = exp(data_small$povrsina)
+data_small$oddaljenost_SQ = data_small$oddaljenost*data_small$oddaljenost
+data_small$oddaljenost_SQRT = sqrt(data_small$oddaljenost)
+data_small$oddaljenost_LOG = log(data_small$oddaljenost)
+
+pairs(select(data_small, 2,4:9), lower.panel = NULL)
+cor(select(data_small, 2,4:9))
+
+fit_small <- lm(skCena~povrsina, data=data_small)
 fit_small <- lm(skCena~letoGradnje+povrsina+oddaljenost+parkirisce, data = data_small)
+fit_small <- lm(skCena~letoGradnje+letoGradnje_SQ+letoGradnje_SQRT+letoGradnje_LOG
+                +povrsina+povrsina_SQ+povrsina_SQRT+povrsina_LOG
+                +oddaljenost+oddaljenost_SQ+oddaljenost_SQRT+oddaljenost_LOG
+                +parkirisce, data = data_small)
+fit_small <- lm(skCena~letoGradnje+povrsina+povrsina_EXP+oddaljenost+parkirisce, data = data_small)
 summary(fit_small)
 
 #reg <- regtabela(fit)
@@ -61,3 +83,15 @@ hist(data$letoGradnje, main="")
 hist(data$povrsina, main="")
 hist(data$oddaljenost, main="")
 hist(data$skCena, main="")
+
+qqPlot(fit_small$residuals)
+
+par(mfrow=c(2,2))
+plot(fit_small, which=1:4)
+bptest(fit_small)
+influencePlot(fit_small)
+
+a <- which(cooks.distance(fit_small) > 4/101)
+cooks.distance(fit_small)[a]>=qf(0.5, 5, 97)
+
+ncvTest(fit_small)

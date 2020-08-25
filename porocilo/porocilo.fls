@@ -88,6 +88,12 @@ INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfon
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
@@ -159,38 +165,39 @@ INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss12.tfm
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\letoGradnje_hist.png
 INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\letoGradnje_hist.png
 INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\letoGradnje_hist.png
 INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\letoGradnje_hist.png
 INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\letoGradnje_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
-INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
-INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang2.sty
-INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang2.sty
-INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.sty
-INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\povrsina_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\oddaljenost_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\skCena_hist.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\pairs.png
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang2.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang2.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.sty
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.sty
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1095.tfm
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
@@ -200,13 +207,25 @@ INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcbx1095.tfm
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\diagnosticGraphs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\diagnosticGraphs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\diagnosticGraphs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\diagnosticGraphs.png
+INPUT C:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\slike\diagnosticGraphs.png
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcss1200.tfm
 INPUT c:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.aux
 INPUT c:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.out
 INPUT c:\Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.out
+INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1200.pk
+INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1200.pk
 INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1095.pk
 INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1095.pk
 INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
 INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
