@@ -8,6 +8,7 @@
 \usepackage{amssymb}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{eurosym}
 \usepackage{graphicx}
 \graphicspath{ {C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/} }
 
@@ -130,29 +131,10 @@ velikimi vrtovi.
 
 Izmed petih spremenljivk so $ letoGradnje $, $ povrsina $,
 $ oddaljenost $ in $ skCena $ zvezne, $ parkirisce $ pa je
-diskretna. Zbral sem podatke o 103 različnih stanovanjih ($ N = 103 $).
+diskretna. Zbral sem podatke o 120 različnih stanovanjih ($ N = 120 $).
 
 Za vsako zvezno spremenljivko sem izračunal povprečje, standardni odklon,
 mediano absolutnih odstopanj od mediane, asimetričnost in sploščenost.
-Povprečje se izračuna po formuli
-\begin{equation}
-	\mu = \frac{\sum\limits_{i=1}^{N} x_{i}}{N}
-\end{equation}
-Standardni odklon se izračuna po formuli
-\begin{equation}
-	\sigma = \sqrt{\frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{2}}{N}}
-\end{equation}
-Mediano absolutnih odstopanj od mediane se izračuna tako, da se izračunajo vse
-absolutne razlike med podatki in mediano in se poišče mediano razlik.
-\newline
-Asimetričnost se izračuna po naslednji formuli
-\begin{equation}
-	skew = \frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{3}}{N*\sigma^{3}}
-\end{equation}
-Sploščenost pa se izračuna po formuli
-\begin{equation}
-	kurtosis = \frac{\sum\limits_{i=1}^{N}\left(x_{i}-\mu\right)^{4}}{N*\sigma^{4}}-3
-\end{equation}
 
 Asimetričnost (skewness) nam pove, kako asimetrični so podatki. Negativna
 vrednost pove, da je rep podatkov na levi (večina podatkov je na desni stran
@@ -160,10 +142,10 @@ grafa) in obratno. Na grafu se to vidi kot v katero smer so podatki razvlečeni.
 Vrednost $ 0 $ nam pove, da so podatki porazdeljeni simetrično, $ >0 $ pove, da
 so podatki razvlečeni v desno, $ <0 $ pa da so razvlečeni v levo.
 
-Sploščenost (kurtosis) nam pove, kako močni so repi porazdelitve podatkov.
-Pozitivna vrednost pove, da so repi dobro zastopani in porazdelitev izgleda
-bolj ploščata. Negativna vrednost pove, da so repi porazdelitve slabo zastopani
-in graf porazdelitve izgleda zelo špičast.
+Sploščenost (kurtosis) nam pove, kako močni so repi podatkov. Pozitivna
+vrednost pove, da so repi dobro zastopani in graf izgleda bolj ploščato.
+Negativna vrednost pove, da so repi slabo zastopani in graf izgleda zelo
+špičast.
 
 V tabeli so predstavljene prej omenjene lastnosti zveznih spremenljivk:
 minimum (min), maksimum (max), povprečje (avg), mediana (median),
@@ -176,18 +158,18 @@ asimetričnosti (skew) in test sploščenosti (kurt):
 \begin{tabular}{ c|cccccccc }
 	& min & max & avg & sd & median & MAD & skew & kurt \\
 	\hline
-	letoGradnje & 1895 & 2020 & 1986,16 & 28,50 & 1995 & 25,20 & -1,22 & 1,27 \\
-	povrsina & 10 & 150 & 67,75 & 38,40 & 65 & 41,22 & 0,42 & -0,67 \\
-	oddaljenost & 0,97 & 5,10 & 2,53 & 1 & 2,18 & 0,67 & 0,77 & -0,26 \\
-	skCena & 160 & 3700 & 940,13 & 700,20 & 800 & 333,58 & 2,17 & 5,28 \\
+	letoGradnje & 1895 & 2020 & 1984.81 & 29.72 & 1995 & 25.20 & -1.14 & 0.81 \\
+	povrsina & 10 & 207.90 & 68.92 & 39.96 & 65 & 37.06 & 0.67 & 0.23 \\
+	oddaljenost & 0.89 & 5.07 & 2.51 & 1.01 & 2.22 & 0.90 & 0.69 & -0.29 \\
+	skCena & 160 & 3700 & 945.86 & 706.03 & 800 & 308.38 & 2.19 & 5.29 \\
 \end{tabular}
 \end{center}
 \end{table}
 
-Ker pa se vrednosti testa asimetričnosti in sploščenosti zelo razlikujejo
-od $ 0 $, to kaže na nenormalno porazdelitev, in tako nam vrednosti o povprečju
-ali standardnem odklonu povesta bolj malo. Veliko bolj si lahko pomagamo z
-mediano in MAD, saj nam podatka data boljši občutek o tem, kakšni so podatki.
+Ker pa se vrednosti testa asimetričnosti in sploščenosti razlikujejo od $ 0 $,
+to kaže na nenormalno porazdelitev, in tako nam vrednosti o povprečju ali
+standardnem odklonu povesta bolj malo. Veliko bolj si lahko pomagamo z mediano
+in MAD, saj nam podatka data veliko boljši občutek o tem, kakšni so podatki.
 Naredil sem še test normalnosti z ukazom {\sf shapiro.test()} (Shapiro-Wilk)
 in test simetričnosti z {\sf symmetry.test()} (MGG):
 
@@ -195,36 +177,41 @@ in test simetričnosti z {\sf symmetry.test()} (MGG):
 \begin{center}
 \caption{Tabela rezultatov testa normalnosti in simetrije}
 \label{table:3}
-\begin{tabular}{ c|c|c }
-	& Shapiro-Wilk & MGG \\
+\begin{tabular}{ c|cc|cc }
+	& \multicolumn{2}{c}{Shapiro-Wilk} & \multicolumn{2}{c}{MGG} \\
+	& w value & p value & Test statistics & p value \\
 	\hline
-	letoGradnje & 2e-07 & 1,32e-05 \\
-	povrsina & 0,002 & 0,344 \\
-	oddaljenost & 8e-06 & 3,82e-07 \\
-	skCena & 1e-11 & 4,22e-04 \\
+	letoGradnje &  0.88384 & 3.184e-08 & -5.1319 & $<$2.2e-16 \\
+	povrsina & 0.95714 & 0.0007503 & 1.4438 & 0.15 \\
+	oddaljenost & 0.93178 & 1.244e-05 & 4.4071 & $<$2.2e-16 \\
+	skCena & 0.75813 & 8.857e-13 & 3.9694 & $<$2.2e-16 \\
 \end{tabular}
 \end{center}
 \end{table}
 
-Shapiro-Wilk-ov test nam pove, s kakšno verjetnostjo je naš vzorec normalno
-porazdeljen, če je populacija normalno porazdeljena. V našem primeru ima
-najvišjo verjetnost spremenljivka $ povrsina $ z 0,2\%, kar pa je premalo,
-da bi lahko sklepali o normalni porazdelitvi. Minimalni prag za sprejem
-hipoteze o normalnosti je namreč 5\%.
+Shapiro-Wilk-ov test testira ničelno hipotezo, da je spremenljivka normalno
+porazdeljena, proti alternativni hipotezi, da ni. Ničelno hipotezo sprejme, če
+je p vrednost (p value) večja od 0,05. V našem primeru ima najvišjo p vrednost
+spremenljivka $ povrsina $, vendar je še vedno pod mejo sprejetja. Nobena
+spremenljivka tako ni normalno porazdeljena.
 
-MGG (Miao, Gel, and Gastwirth) test simetričnosti pa nam testira hipotezo, da
+MGG (Miao, Gel, and Gastwirth) test simetričnosti pa testira hipotezo, da
 je naš vzorec simetričen proti alternativni hipotezi, da vzorec ni simetričen.
 Vse spremenljivke razen $ povrsina $ imajo p vrednost testa zelo majhno,
-zato so nesimetrične. Spremenljivka $ povrsina $ pa je približno simetrično
-porazdeljena.
+zato so nesimetrične. Spremenljivka $ povrsina $ pa je po MGG testu simetrično
+porazdeljena. Na njenem grafu pa se vidi, da je bolj na meji simetrije.
 
 Tudi ko pogledamo histograme na sliki \ref{figure:1}, vidimo, da ni nobena
 spremenljivka normalno porazdeljena ali simetrična. Najbližje normalni
-porazdelitvi je $ povrsina $, vendar je rahlo nagnjena v desno. Na grafu leta
+porazdelitvi je $ povrsina $, vendar je nagnjena v levo. Na grafu leta
 gradnje \ref{figure:1a} se vidi, da je večina najemniških stanovanj novejših.
-Površina stanovanj na grafu \ref{figure:1b} je približno normalno porazdeljena,
-vseeno pa je več manjših stanovanj. Oddaljenost od središča Ljubljane na grafu
-\ref{figure:1c} je skoraj konstantna z izjemo večine stanovanj na razdalji 2 km.
+Ker je mediana 1995, je polovica stanovanj mlajših od 25 let. Veliko stanovanj
+je še iz leta 1960 naprej, starejših pa je že lezo malo. Površina stanovanj na
+grafu \ref{figure:1b} je približno simetrično porazdeljena, vseeno pa je več
+manjših stanovanj. Redka stanovanja so zelo velika, večina stanovanj ima
+površino do $150 m^{2}$ Oddaljenost od središča Ljubljane na grafu
+\ref{figure:1c} je skoraj linearna z izjemo večine stanovanj na razdalji 2 km.
+Zelo redka so tudi stanovanja skoraj v središču ali že izven Ljubljane.
 Skupna cena mesečne najemnine na grafu \ref{figure:1d} pa ima večino podatkov
 manj od 1000€ na mesec. Stanovanja z najemninami 2000€ ali več pa so stanovanja
 tipa penthouse in so bolj luksuzna ter redkejša na trgu.
@@ -255,17 +242,16 @@ tipa penthouse in so bolj luksuzna ter redkejša na trgu.
 \label{figure:1}
 \end{figure}
 
-Spremenljivka $ parkirisce $ pa je diskretna, zato jo lahko predstavimo z
+Spremenljivka $ parkirisce $ je diskretna, zato jo lahko predstavimo z
 vzorčnim deležem:
 
 \begin{center}
 \begin{tabular}{ c|cc }
 	& da & ne \\
 	\hline
-	parkirisce & 0,544 & 0,456 \\
+	parkirisce & 0.55 & 0.45 \\
 \end{tabular}
 \end{center}
-
 
 \section{Večkratna regresija}
 
@@ -287,53 +273,59 @@ nekaj predpostavk regresijskega modela:
 Pri modelu večkratne regresije je najprej potrebno preveriti, kako so
 neodvisne spremenljivke povezane med sabo. Če so povezane preveč, lahko z neko
 spremenljivko opišemo drugo, in tako iz druge ne izvemo nič novega ali pa zelo
-malo o odvisni spremenljivki. Korelacijski koeficient med dvema spremenljivkama
-lahko izračunamo po naslednji formuli:
-\begin{equation}
-	\rho\left(X,Y\right) = \frac{Cov\left(X,Y\right)}{\sigma_{X}\sigma_{Y}} =
-	\frac{E\left(\left(X-E\left(X\right)\right)\left(Y-E\left(Y\right)\right)\right)}{\sigma_{X}\sigma_{Y}}
-\end{equation}
-Koeficient korelacije ima vrednost med $ -1 $ in $ 1 $. Če ima vrednost blizu
+malo o odvisni spremenljivki.
+
+Pearsonov koeficient korelacije meri linearno odvisnost med dvema
+spremenljivkama ima vrednost med $ -1 $ in $ 1 $. Če ima vrednost blizu
 $ 1 $, sta spremenljivki pozitivno povezani, če pa ima vrednost blizu $ -1 $,
-sta negativno povezani. Če vrednost znaša okoli $ 0 $, spremenljivki nista
-povezani.
-\newline
-V spodnji tabeli so predstavljeni korelacijski koeficienti za zvezne
+sta negativno povezani. Če vrednost znaša $ 0 $, spremenljivki nista
+povezani. Povezanost pa se drugče opisuje kot šibko, srednjo in močno glede na
+absolutno velikost koeficienta in pozitivno ali negativno glede na predznak.
+V spodnji tabeli so predstavljeni pearsonovi koeficienti korelacije za zvezne
 spremenljivke:
+\begin{table}[H]
 \begin{center}
+\caption{Pearsonovi linearni koeficienti korelacije}
 \begin{tabular}{ c|cccc }
 	& letoGradnje & povrsina & oddaljenost & skCena \\
 	\hline
-	letoGradnje & 1.000 & 0.035 & 0.252 & 0.168 \\
-	povrsina & 0.035 & 1.000 & -0.058 & 0.829 \\
-	oddaljenost & 0.252 & -0.058 & 1.000 & -0.100 \\
-	skCena & 0.168 & 0.829 & -0.100 & 1.000 \\
+	letoGradnje & 1.000 & 0.081 & 0.267 & 0.176 \\
+	povrsina & 0.081 & 1.000 & -0.070 & 0.846 \\
+	oddaljenost & 0.267 & -0.070 & 1.000 & -0.131 \\
+	skCena & 0.176 & 0.846 & -0.131 & 1.000 \\
 \end{tabular}
 \end{center}
+\end{table}
 
 Neodvisne spremenljivke $ letoGradnje $, $ povrsina $ in
 $ oddaljenost $ imajo medsebojne koeficiente skoraj $ 0 $ z izjemo
 $ letoGradnje $ in $ oddaljenost $, ki imata pozitiven koeficient
-$ 0.252 $. Spremenljivki sta pozitivno povezani, kar pomeni, da se novejša
-stanovanja nahajajo malo bolj izven središča Ljubljane. Vidimo lahko tudi, da
-sta spremenljivki $ povrsina $ in $ skCena $ povezani s koeficientom $ 0,829 $,
-iz česar lahko sklepamo, da je najemnina stanovanja v Ljubljani odvisna
-predvsem od površine le tega.
+$ 0.267 $. Spremenljivki sta pozitivno šibko povezani, kar pomeni, da se
+novejša stanovanja nahajajo malo bolj izven središča Ljubljane. Vidimo lahko
+tudi, da imata spremenljivki $ povrsina $ in $ skCena $ pearsonov linearni
+koeficient $ 0,846 $, kar nakazuje na močno linerano odvisnot. Iz tega lahko
+sklepamo, da je mesečna najemnina stanovanj zelo odvisna od površine le tega.
+
+Na sliki \ref{figure:2} vidimo, kako so posamezne spremenljivke povezane med
+sabo. Iz grafov med spremenljivkami $ letoGradnje, povrsina $ in $ oddaljenost $
+se ne vidi nobene očitne povezanosti, kljub temu da sta $ letoGradnje $ in
+$ oddaljenost $ šibko povezani. Najbolj opazna odvisnost je med $ povrsina $ in
+$ skCena $, ki izgleda zelo linearno z izjemo nekaj točk. To še dodatno
+potrjuje našo ugotovitev o tem, da sta najemnina in površina stanovanja
+povezani.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=13cm]{pairs.png}
-	\caption{Grafični prikaz korelranosti spremenljivk}
+	\caption{Grafični prikaz povezanosti spremenljivk}
 	\label{figure:2}
 \end{figure}
 
-Iz slike \ref{figure:2} vidimo, kako so podatki 
-
 \subsection{Večkratna regresija}
 
-Neodvinsne spremenljivke našega modeal so $ letoGradnje $, $ povrsina $,
-$ oddaljenost $, $ parkirisce $. Odvisna spremenljivka je
-$ skCena $. Funkcija bo izgledala tako:
+Neodvisne spremenljivke našega modeal so $ letoGradnje, povrsina, oddaljenost $
+in $ parkirisce $. Odvisna spremenljivka je $ skCena $. Funkcija našega
+opisnega modela bo imela naslednjo obliko:
 \begin{equation}
 	skCena = a+b*letoGradnje+c*povrsina+d*oddaljenost+e*parkirisce+\epsilon
 \end{equation}
@@ -341,108 +333,196 @@ $ skCena $. Funkcija bo izgledala tako:
 $ b, c, d $ in $ e $ so koeficienti posameznih neodvisnih spremenljivk. $ a $
 predstavlja začetno vrednost, sam po sebi pa nima smisla (stanovanje z $ 0 $ v
 pri vseh neodvisnih spremenljivkah bi imelo $ a $ mesečne najemnine, tako
-stanovanje pa ne obstaja). $ \epsilon $ predstavlja naključno napako.
+stanovanje pa ne obstaja). $ \epsilon $ predstavlja odstopanje napovedi od
+realne vrednosti pri podanih podatkih.
 
 Večkratno regresijo sem določil z ukazom \\
 {\sf lm(skCena$\sim$letoGradnje+povrsina+oddaljenost+parkirisce, data=data)}. \\
 Dobil sem naslednje podatke:
-\begin{lstlisting}[language=R,basicstyle=\small]
+\\
+\\
+\begin{lstlisting}[language=R,basicstyle=\small,label={lst:1}]
 Call:
 lm(formula = skCena ~ letoGradnje + povrsina + oddaljenost +
-    parkirisce, data = data)
+	parkirisce, data = data)
 
 Residuals:
-    Min      1Q  Median      3Q     Max
--765.48 -203.91   -9.88  159.84 1283.37
+    Min      1Q  Median      3Q     Max 
+-735.82 -209.25  -18.36  170.03 1314.43 
 
 Coefficients:
-             Estimate Std. Error t value Pr(>|t|)
-(Intercept) -8806.067   2660.228  -3.310  0.00131 **
-letoGradnje     4.499      1.353   3.325  0.00124 **
-povrsina       15.714      1.020  15.410  < 2e-16 ***
-oddaljenost   -60.497     38.036  -1.591  0.11494
-parkirisce   -184.771     79.226  -2.332  0.02174 *
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -7474.6432  2290.4060  -3.263  0.00145 **
+letoGradnje     3.8508     1.1684   3.296  0.00131 **
+povrsina       15.4475     0.8845  17.465  < 2e-16 ***
+oddaljenost   -72.7001    33.8045  -2.151  0.03360 *
+parkirisce   -190.6577    71.9106  -2.651  0.00915 **
 ---
-Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 371.6 on 98 degrees of freedom
-Multiple R-squared:  0.7293, Adjusted R-squared: 0.7183
-F-statistic: 66.01 on 4 and 98 DF, p-value: < 2.2e-16
+Residual standard error: 357 on 115 degrees of freedom
+Multiple R-squared:  0.753,	Adjusted R-squared:  0.7444
+F-statistic: 87.63 on 4 and 115 DF,  p-value: < 2.2e-16
 \end{lstlisting}
 
 Iz tabele koeficientov (Coefficients) lahko razberemo koeficiente naše
 funkcije, skupaj z njihovo napako ocene, t statistiko in p vrednostjo. P
 verjetnost nam pomaga pri zavračanju ničelne hipoteze modela: vrednosti
-koeficientov so enake $ 0 $. Pri vseh spremenljivkah razen $ oddaljenost $ so
-p vrednosti manjše od $ 0.05 $, zato za te spremenljivke ničelno hipotezo
-zavrnemo. Koeficienti spremenljivk $ letoGradnje, povrsina $ in $ parkirisce $
-so po vrsti $ 4.499, 15.714 $ in $ -183.771 $. Ker ničelne hipoteze pri
-spremenljivki $ oddaljenost $ ne zavrnemo, ta za naš model ni pomembna. Naša
-funkcija je tako naslednja:
+koeficientov so enake $ 0 $. Pri vseh spremenljivkah so p vrednosti manjše od
+$ 0.05 $, zato ničelno hipotezo zavrnemo. Najbližje potrditvi ničelne hipoteze
+je spremenljivka $ oddaljenost $, vendar ima p vrednost $ 0.0336 $, ki je pod
+mejo sprejetja ničelne hipoteze $ 0.05 $.
+
+Koeficienti spremenljivk $ letoGradnje, povrsina, oddaljenost $ in
+$ parkirisce $ so po vrsti $ 3.8508, 15.4475, -72.7001 $ in $ -190.6577 $. Pri
+teh podatkih pa moramo imeti v mislih, da je spremenljivka $ parkirisce $
+diskretna in zavzame vrednosti $ 0 $ ali $ 1 $, zato v bistvu dobimo dve
+enačbi (ena za stanovanja s parkiriščem in druga brez). Naša splošna funkcija
+je tako naslednja:
 \begin{equation}
-	skCena = -8806.067+4.499*letoGradnje \newline +15.714*povrsina-183.771*parkirisce+\epsilon
+\begin{split}
+	skCena = &-7474.6432+3.8508*letoGradnje \\
+			&+15.4475*povrsina-72.7001*oddaljenost \\
+			&-190.6577*parkirisce+\epsilon
+\end{split}
 \end{equation}
 
 \subsection{Preverjanje ustreznosti modela}
 
 Prirejeni $ R^{2} $ (Adjusted R-squared) nam pove, kako veliko nam o
-spremenljivki $ skCena $ pove naš model. Vrednost $ 0.7183 $ nam pove, da naš
-regresijski model pojasni $ 71.83\% $ sprememb spremenljivke $ skCena $. Ker pa
-je standardni odklon naključnih napak (Residual standard error) precej velik
-($ 371.6 $), lahko sklepamo, da model ni najboljši. Zato preverimo še štiri
+spremenljivki $ skCena $ pove naš model. Vrednost $ 0.7444 $ nam pove, da naš
+regresijski model pojasni $ 74.44\% $ variabilnosti spremenljivke $ skCena $.
+Ker pa je standardni odklon naključnih napak (Residual standard error) precej
+velik ($ 357 $), lahko sklepamo, da model ni najboljši. Zato preverimo še štiri
 predpostavke o regresijskem modelu. Te lahko preverimo z štirimi diagnostičnimi
 grafi:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=13cm]{diagnosticGraphs.png}
-	\caption{Diagnostični grafi}
+	\caption{Diagnostični grafi za preverjanje ustreznosti modela}
+	\label{figure:3}
 \end{figure}
 
 Zgornji levi graf (Residuals vs Fitted) preverja linearnost modela. Prikazuje
-ostanke $ \epsilon_{i} $ v odvisnosti od predvidenih vrednosti. Točke
-oblikujejo negativno linearno funkcijo, kar pomeni, da v našem modelu manjka
-linearna funkcija neke neznane spremenljivke. Naš model zato ni dober in bi se
-ga dalo izboljšati.
+ostanke $ \epsilon_{i} $ v odvisnosti od predvidenih vrednosti. Če točke
+izgledajo naključno razporejene, pomeni da so napake nalkjučno razporejene in
+naš model je ustrezen. Točke za naš model pa imajo neko zvezo, na prvi pogled
+izgleda negativno linearna. To pomeni, da v našem modelu manjka neka funkcija,
+ki bi te napake odpravila. Naš model zato ni najboljši in bi se ga dalo
+izboljšati.
 
 Zgornji desni graf (Normal Q-Q) prikazuje normalnost porazdelitve
 standardiziranih ostankov. Če točke tvorijo premico, lahko sklepamo, da so
-napake normalno porazdeljene. Ker točke na desni strani odstopajo od premice,
-napake ne izgledajo normalno porazdeljene. To dodatno potrdi rezultat ukaza
-{\sf shapiro.test(fit\$residuals)}, ki hipotezo o normalnosti ovrže s p
-vrednostjo $ 1.102e-05 $.
+napake normalno porazdeljene in naš model je v redu. Ker točke na desni strani
+zelo odstopajo od premice, napake ne izgledajo normalno porazdeljene. To
+dodatno potrdi rezultat ukaza {\sf shapiro.test(model\$residuals)}, ki hipotezo
+o normalnosti ovrže z w vrednostjo $ 0.91457 $ in s p vrednostjo $ 1.18e-06 $.
 
-Spodnji levi graf (Scale-Location) predstavlja varianco napak, ki naj bi bile
-konstantne. Na grafu se variance zelo razlikujejo, to pa potrjuje tudi ukaz
-{\sf ncvTest(fit)}, ki hipotezo o konstantni varianci ovrže s p vrednostjo
-$ < 2.22e-16 $.
+Spodnji levi graf (Scale-Location) predstavlja varianco napak glede na
+predvidene vrednosti. Če je model dober, je varianca napak konstantna.
+Na grafu varianca napak ni konstantna in sledi neki polinomski funkciji.
+To potrjuje tudi Breusch-Pagan-ov test, ki testira hipotezo o konstantnosti
+napak proti hipotezi, da napake niso konstantne. Kličemo ga s funkcijo
+{\sf ncvTest(model)}. Za naš model dobimo p vrednost manjšo od $ 2.22e-16 $,
+kar pomeni, da ovržemo hipotezo o konstantnosti napak.
 
 Spodnji desni graf (Cook's distance) prikazuje, kateri podatki najbolj
-odstopajo od modela. Pri tem nas zanima, kako vplivajo na model. Točke s
-preveliko razdaljo dobimo z ukazom {\sf points $\leftarrow$ which(cooks.distance(fit) $ > $ 4/101)}.
-Njihov vpliv preverimo z ukazom {\sf any(cooks.distance(fit)[points]$ > $=qf(0.5, 4, 98))}.
-Ker vrne False, to pomeni, da nobena točka ne vpliva preveč na model in jih
-zato ni potrebno odstraniti.
+vplivajo na model. Cook-ova razdalja se izračuna tako, da se za vsak podatek
+izračuna model z njim in brez njega. Razlika med vsemi razlikami teh dveh
+modelov je Cook-ova razdalja posameznega podatka. Če je razdalja velika,
+to pomeni, da podatek močno vpliva na model. Če je tak podatek neobičajen in
+izstopa med drugimi podatki, ga lahko poskusimo odstraniti. Druga možnost pa
+je, da našim podatkom ustreza nek drugi model, ki bolje opisuje zvezo med
+neodvisnimi spremenljivkami in odvisno spremenljivko. Za naš primer lahko točke
+s preveliko razdaljo dobimo z ukazom {\sf points $\leftarrow$ which(cooks.distance(model) $ > $ 4/118)}.
+Ali ima neka točka prevelik vpliv, lahko izračunamo z ukazom
+{\sf any(cooks.distance(fit)[points] $ > $= qf(0.5, 4, 118))}. Ukaz vrne FALSE,
+kar pomeni, da ne rabimo odstraniti nobene točke iz naših podatkov.
 
-Za naše koeficiente pa lahko tudi izračunamo intervale zaupanja za $ 95\% $
-gotovost. Intervale za vsak koeficient dobimo z ukazom {\sf confint(fit)}, ki
+Za koeficiente našega modela pa lahko tudi izračunamo intervale zaupanja za
+$ 95\% $ gotovost. Intervale za vsak koeficient dobimo z ukazom {\sf confint(model)}, ki
 nam vrne naslednjo tabelo:
+\begin{table}[H]
 \begin{center}
+\caption{Intervali zaupanja koeficientov spremenljivk}
 \begin{tabular}{ c|cc }
 	& 2.5\% & 97.5\% \\
 	\hline
-	(Intercept) & -14085.203 & -3526.931 \\
-	letoGradnje & 1.814 & 7.184 \\
-	povrsina & 13.691 & 17.738 \\
-	oddaljenost & -135.979 & 14.984 \\
-	parkirisce & -341.992 & -27.551 \\
+	(Intercept) & -12011.4967 & -2937.7897 \\
+	letoGradnje & 1.5365 & 6.1651 \\
+	povrsina & 13.6955 & 17.1995 \\
+	oddaljenost & -139.6602 & -5.7400 \\
+	parkirisce & -333.0987 & -48.2166 \\
 \end{tabular}
 \end{center}
+\end{table}
 Intervali zaupanja so za vse koeficiente precej veliki, zato naš model ni
-ustrezen.
+ustrezen. K velikosti intervalov prispeva standardna napaka posameznih
+spremenljivk modela, ki jih dobimo pod {\sf Std. Error} pri izpisu ukaza
+\ref{lst:1}.
+
+\subsection{Predlogi izboljšave modela}
+
+Linearni model se ni izkazal za najboljši opis mojih podatkov, zato sem
+poskusil še z linearno kombinacijo nelinearnih funkcij spremenljivk.
+Izračunal sem še kvadratno, korensko, logaritemsko in ekspomentno funkcijo
+za spremenljvke $ letoGradnje, povrsina $ in $ oddaljenost $. Spremenljivke
+$ parkirisce $ se nisem dotikal, saj je diskretna in zavzame samo dve
+vrednosti.
+
+Najprej sem z ukazom {\sf lm} preveril regresijski model za kar vse prej
+naštete spremenljivke. Ta model pravi, da na najemnino vplivata samo člena
+$ e^{povrsina} $ in $ povrsina^{2} $ s p vrednostima $ 0.00483 $ in $ 0.03561 $.
+Pri vseh ostalih členih drži ničelna hipoteza linearne regresije, in sicer, da
+so njihovi koeficienti enaki $ 0 $. Model tudi pojasni $ 80.25\% $ variabilnosti
+cene, kar je za $ 5.81\% $ bolje kot prejšnji model, vendar ima še vedno vse
+pomankljivosti prejšnjega modela. Ta rezultat pa nam pove, da je mesečna
+najemnina po vsej verjetnosti polinomska funkcija površine stanovanja.
+
+Izračunal sem še nekaj potenčnih vrednosti površine in preveril model samo za
+ceno v odvisnosti od polinoma površine. Tokrat se je izkazalo, da so vsi členi
+polinoma obdržali ničelno hipotezo, da so njihovi koeficienti enaki $ 0 $. Iz
+tega lahko sklepamo, da tudi druge spremenljivke vplivajo na mesečno najemnino,
+saj površina sama ne more opisati cene najemnine.
+
+Preveril sem še nekaj linearnih kombinacij raznih funkcij spremenljivk, vendar
+nisem našel ustrezne kombinacije, ki bi zadoščala predpostavkam regresijskega
+modela. Zato sem se odločil še malo pogledati podatke.
+
+Iz grafa preverjanja linearnosti modela iz slike \ref{figure:3}
+(Residuals vs Fitted) lahko vidimo, da napake padajo z višjo najemnino, torej
+je model napovedal višje cene za dražja stanovanja, kot pa dejansko so,
+najdražja stanovanja pa je ocenil z nižjo ceno od dejanske. Če iz podatkov
+odstranim stanovanja dražja od 1500€ in poskusimo ponovno določiti regresijski
+model, dobimo dober model za stanovanja, cenejša od 1500€. Standardna napaka
+novega modela za cenejša stanovanja je samo $ 144 $, kar je veliko manj od
+prvotnega modela. Prirejeni $ R^{2} = 76.14\% $, kar je za samo $ 1.7\% $ bolje
+od prejšnjega modela. Prav tako so za ta model izpolnjeni vsi pogoji
+regresijskega modela. Napake so porazdeljene normalno, prav tako so konstantne
+variance napak in nobene točke ni potrebno odstraniti iz modela. Formula modela
+za stanovanja, cenejša od 1500€, je naslednja:
+\begin{equation}
+\begin{split}
+	skCena = &-3025.2037+1.7112*letoGradnje \\
+			&+8.3316*povrsina-53.7657*oddaljenost+\epsilon
+\end{split}
+\end{equation}
+Pri tem pa je treba vedeti in paziti, da smo odstranili $ 17 $ najdražjih
+stanovanj, zato modela med sabo nista enakovredna, saj opisujeta druge
+podatke. Ta model pa nakazuje na to, da obstajajo različni modeli opisa
+najemnine glede na cenovni rang mesečne najemnine.
 
 \section{Zaključek}
 
-Večkratnemu regresijskemu modelu manjka neka neznana linearna spremenljivka.
+Ugotovil sem, da je cena mesečne najemnine odvisna predvsem od površine
+stanovanja, ki ga najemamo. Model opisa cene najemnine pa ni najboljši, saj
+pojasni $ 74.44\% $ variance cene najema, prav tako pa so napake razporejene
+nenaključno, kar nakazuje na mankajočo funkcijo v modelu opisa. Prav tako je
+možno, da v modelu manjka neka neznana zvezna spremenljivka. Ugotovil sem tudi,
+da je možno, da obstajata dva modela opisa najemnine stanovanj, eden za
+luksuzna in drugi za neluksuzna stanovanja. Na to me napeljuje dejstvo, da sem
+dobil veliko boljši opisni model po odstranitvi stanovanj, ki so imela
+najemnino 1500€ in več.
 
 \section{Literatura}
 
