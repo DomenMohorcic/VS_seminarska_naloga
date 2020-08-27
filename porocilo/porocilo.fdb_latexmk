@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1598546754 "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf" "porocilo" 1598546856
+["pdflatex"] 1598559479 "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf" "porocilo" 1598559501
   "C:/Users/dmoho/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1095.pk" 1598121680 13580 3b082ad08a6a9784b1a4e0e50d32b922 ""
   "C:/Users/dmoho/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1587915297 12668 c1eb32652d9eb66a9770931d8e7a1685 ""
   "C:/Users/dmoho/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1587915296 14064 bc43efde423d3005c0c42f9298d28df9 ""
@@ -116,15 +116,15 @@
   "C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png" 1598513246 9761 028e1246f90e294a08c8efc2e197f018 ""
   "C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png" 1598456714 1557 4352fbe0089891a5baec93c3fc3d9d18 ""
   "C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png" 1598456613 1476 83542c5f4d25b23eb78307541e1eda85 ""
-  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.aux" 1598546755 4609 ba3957799db000e3e285378722707765 ""
-  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" 1598546856 25357 3453b146a9eced336e91b1af501ff788 ""
-  "porocilo.aux" 1598546755 4609 ba3957799db000e3e285378722707765 "pdflatex"
-  "porocilo.out" 1598546755 653 a5918f0c76373c54d532d7c07c3942ba "pdflatex"
-  "porocilo.tex" 1598546856 25357 3453b146a9eced336e91b1af501ff788 ""
+  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.aux" 1598559480 4609 05ee687d20bfc0d1e33d315635baeb25 ""
+  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex" 1598559501 26630 28a1cdaf1690ea7eea25c85ec1c5a66f ""
+  "porocilo.aux" 1598559480 4609 05ee687d20bfc0d1e33d315635baeb25 "pdflatex"
+  "porocilo.out" 1598559480 653 a5918f0c76373c54d532d7c07c3942ba "pdflatex"
+  "porocilo.tex" 1598559501 26630 28a1cdaf1690ea7eea25c85ec1c5a66f ""
   (generated)
-  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf"
-  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.log"
-  "porocilo.aux"
-  "porocilo.out"
   "porocilo.pdf"
+  "porocilo.aux"
+  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.log"
+  "c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.pdf"
   "porocilo.log"
+  "porocilo.out"

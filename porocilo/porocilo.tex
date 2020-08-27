@@ -21,28 +21,38 @@
 \section{Uvod}
 
 Ko se povprečen Slovenec odseli od staršev v svoje stanovanje, je star 28,2
-leti (\href{https://www.stat.si/statweb/News/Index/7570}{stat.si}). Pred
-izselitvijo pa si mora stanovanje poiskati. Po navadi ljudje pri izbiri
+leti. Pred izselitvijo pa si mora stanovanje poiskati. Po navadi ljudje pri izbiri
 stanovanja gledajo na to, ali jim je stanovanje všeč in ali se jim zdi cena
 ustrezna stanovanju. Od česa pa sploh je odvisna cena stanovanja? Friškovec
-(2010)[1] ugotavlja, da je oglaševalska cena stanovanja
-pozitivno odvisna od površine, števila kopalnic in ali gre za mansardno
-stanovanje, negativno pa predvsem od višine nadstropja. Repič (2014)[2] pa je
-v magistrski nalogi pokazala, da je prodajna cena stanovanja pozitivno odvisna
-od prisotnosti dvigala, parkirnega mesta, opremljenosti stanovanja, bližine
-središča Ljubljane in števila sob v stanovanju, negativno pa na ceno vplivajo
-starost stanovanja, površina in trajanje, ko je nepremičnina na voljo za
-prodajo.
+(2010) ugotavlja, da je oglaševalska cena stanovanja pozitivno odvisna od
+površine, števila kopalnic in ali gre za mansardno stanovanje, negativno pa
+predvsem od višine nadstropja. Repič pa je opisala, da je prodajna cena
+stanovanja pozitivno odvisna od prisotnosti dvigala, parkirnega mesta,
+opremljenosti stanovanja, bližine središča Ljubljane in števila sob v
+stanovanju, negativno pa na ceno vplivajo starost stanovanja, površina in
+trajanje, ko je nepremičnina na voljo za prodajo.
 
-V Sloveniji v najemniških stanovanjih živi le 2,4
-gospodinjstev (\href{https://cekin.si/nepremicnine/trnova-pot-do-lastnega-doma-zakaj-mora-biti-tako.html}{cekin.si}).
+V Ameriki sta leta 1996 raziskavo o dejavnikih najemnine naredila Pagliari
+in Webb. Raziskala sta najemniška stanovanja v predmestju Chicaga in ugotovila,
+da je najemnina pozitivno odvisna od površine, števila kopalnic in ali ima
+stanovanje alarmni sistem, negativno pa predvsem od števila sob in višine
+nadstropja. Podobno raziskavo v Ameriki pa je za Dallas naredil C. A. Thomson
+leta 1999. V svoji magistrski nalogi je pokazal, da je najemnina odvisna od
+starosti, površine in lastnega parkirnega mesta. Zanimivo pa je, da lasten
+bazen negativno vpliva na najemnino.
+
+V Sloveniji v najemniških stanovanjih živi le $ 2.4\% $ gospodinjstev.
 Kljub temu je trg najema nepremičnin kar velik, še posebej v Ljubljani (na
 nepremicnine.net je od 1500 oglasov za najem, od tega kar 1000 v Ljubljani),
 kjer pa so najbolj zaželjeni študentje ali posamezniki. Nikjer pa nisem
-zasledil raziskave, ki bi ugotavljala, kaj vpliva na ceno najema.
+zasledil slovenske raziskave, ki bi ugotavljala, kaj vpliva na ceno najema.
+Če sledim ugotovitvam prej omenjenih raziskav, je najemnina tudi v Sloveniji zelo
+odvisna od površine stanovanja. Za ostale parametre pa ne morem nič reči, saj
+se med raziskavami zelo razlikujejo.
 
 Namen seminarske naloge je ugotoviti, kateri dejavniki najbolj vplivajo na ceno
-najemnin v Ljubljanskima predeloma Vič in Rudnik.
+najemnine stanovanja v Ljubljanskih predelih Vič in Rudnik ter določiti
+regresijski opisni model najemnine stanovanj v Ljubljani.
 
 \section{Podatki}
 
@@ -62,7 +72,7 @@ zato sem iskal samo približne lokacije (ulica ali naselje).
 
 Pri določanju razdalje sem si pomagal z orodjem
 \href{https://www.distance.to/}{distance.to}. Za analizo podatkov sem uporabil
-program \href{https://rstudio.com/}{RStudio}.
+program R in urejevalnik \href{https://rstudio.com/}{RStudio}.
 
 \subsection{Opis spremenljivk}
 
@@ -276,11 +286,11 @@ spremenljivko opišemo drugo, in tako iz druge ne izvemo nič novega ali pa zelo
 malo o odvisni spremenljivki.
 
 Pearsonov koeficient korelacije meri linearno odvisnost med dvema
-spremenljivkama ima vrednost med $ -1 $ in $ 1 $. Če ima vrednost blizu
+spremenljivkama in ima vrednost med $ -1 $ in $ 1 $. Če ima vrednost blizu
 $ 1 $, sta spremenljivki pozitivno povezani, če pa ima vrednost blizu $ -1 $,
 sta negativno povezani. Če vrednost znaša $ 0 $, spremenljivki nista
-povezani. Povezanost pa se drugče opisuje kot šibko, srednjo in močno glede na
-absolutno velikost koeficienta in pozitivno ali negativno glede na predznak.
+povezani. Zraven povezanosti pa se pove še moč le te in se opisuje kot šibko,
+srednjo ali močno glede na absolutno velikost koeficienta.
 V spodnji tabeli so predstavljeni pearsonovi koeficienti korelacije za zvezne
 spremenljivke:
 \begin{table}[H]
@@ -303,7 +313,7 @@ $ letoGradnje $ in $ oddaljenost $, ki imata pozitiven koeficient
 $ 0.267 $. Spremenljivki sta pozitivno šibko povezani, kar pomeni, da se
 novejša stanovanja nahajajo malo bolj izven središča Ljubljane. Vidimo lahko
 tudi, da imata spremenljivki $ povrsina $ in $ skCena $ pearsonov linearni
-koeficient $ 0,846 $, kar nakazuje na močno linerano odvisnot. Iz tega lahko
+koeficient $ 0.846 $, kar nakazuje na močno linerano odvisnot. Iz tega lahko
 sklepamo, da je mesečna najemnina stanovanj zelo odvisna od površine le tega.
 
 Na sliki \ref{figure:2} vidimo, kako so posamezne spremenljivke povezane med
@@ -339,8 +349,6 @@ realne vrednosti pri podanih podatkih.
 Večkratno regresijo sem določil z ukazom \\
 {\sf lm(skCena$\sim$letoGradnje+povrsina+oddaljenost+parkirisce, data=data)}. \\
 Dobil sem naslednje podatke:
-\\
-\\
 \begin{lstlisting}[language=R,basicstyle=\small,label={lst:1}]
 Call:
 lm(formula = skCena ~ letoGradnje + povrsina + oddaljenost +
@@ -404,12 +412,12 @@ grafi:
 \end{figure}
 
 Zgornji levi graf (Residuals vs Fitted) preverja linearnost modela. Prikazuje
-ostanke $ \epsilon_{i} $ v odvisnosti od predvidenih vrednosti. Če točke
-izgledajo naključno razporejene, pomeni da so napake nalkjučno razporejene in
-naš model je ustrezen. Točke za naš model pa imajo neko zvezo, na prvi pogled
-izgleda negativno linearna. To pomeni, da v našem modelu manjka neka funkcija,
-ki bi te napake odpravila. Naš model zato ni najboljši in bi se ga dalo
-izboljšati.
+ostanke $ \epsilon_{i} $ (Residuals) v odvisnosti od predvidenih vrednosti. Če točke
+izgledajo naključno razporejene, pomeni, da so napake naključno razporejene in
+naš model je ustrezen. Točke za naš model pa niso naključno porazporejene in
+tvorijo funkcijo, ki izgleda negativno linearna. To pomeni, da v našem modelu
+manjka neka funkcija, ki bi te napake odpravila. Naš model zato ni najboljši in
+bi se ga dalo izboljšati z manjkajočo funkcijo.
 
 Zgornji desni graf (Normal Q-Q) prikazuje normalnost porazdelitve
 standardiziranih ostankov. Če točke tvorijo premico, lahko sklepamo, da so
@@ -436,7 +444,7 @@ je, da našim podatkom ustreza nek drugi model, ki bolje opisuje zvezo med
 neodvisnimi spremenljivkami in odvisno spremenljivko. Za naš primer lahko točke
 s preveliko razdaljo dobimo z ukazom {\sf points $\leftarrow$ which(cooks.distance(model) $ > $ 4/118)}.
 Ali ima neka točka prevelik vpliv, lahko izračunamo z ukazom
-{\sf any(cooks.distance(fit)[points] $ > $= qf(0.5, 4, 118))}. Ukaz vrne FALSE,
+{\sf any(cooks.distance(model)[points] $ > $= qf(0.5, 4, 115))}. Ukaz vrne FALSE,
 kar pomeni, da ne rabimo odstraniti nobene točke iz naših podatkov.
 
 Za koeficiente našega modela pa lahko tudi izračunamo intervale zaupanja za
@@ -471,7 +479,7 @@ $ parkirisce $ se nisem dotikal, saj je diskretna in zavzame samo dve
 vrednosti.
 
 Najprej sem z ukazom {\sf lm} preveril regresijski model za kar vse prej
-naštete spremenljivke. Ta model pravi, da na najemnino vplivata samo člena
+naštete spremenljivke. Novi model pravi, da na najemnino vplivata samo člena
 $ e^{povrsina} $ in $ povrsina^{2} $ s p vrednostima $ 0.00483 $ in $ 0.03561 $.
 Pri vseh ostalih členih drži ničelna hipoteza linearne regresije, in sicer, da
 so njihovi koeficienti enaki $ 0 $. Model tudi pojasni $ 80.25\% $ variabilnosti
@@ -490,10 +498,11 @@ nisem našel ustrezne kombinacije, ki bi zadoščala predpostavkam regresijskega
 modela. Zato sem se odločil še malo pogledati podatke.
 
 Iz grafa preverjanja linearnosti modela iz slike \ref{figure:3}
-(Residuals vs Fitted) lahko vidimo, da napake padajo z višjo najemnino, torej
-je model napovedal višje cene za dražja stanovanja, kot pa dejansko so,
-najdražja stanovanja pa je ocenil z nižjo ceno od dejanske. Če iz podatkov
-odstranim stanovanja dražja od 1500€ in poskusimo ponovno določiti regresijski
+(Residuals vs Fitted) lahko vidimo, da napake linearno padajo z višjo najemnino, torej
+je model napovedal višje cene za srednje draga stanovanja, kot pa dejansko so,
+najdražja stanovanja pa je ocenil z nižjo ceno od dejanske. Najcenejšim
+stanovanjem pa je napovedal nižjo ceno od dejanske. Če iz podatkov
+odstranim stanovanja, dražja od 1500€ in poskusimo ponovno določiti regresijski
 model, dobimo dober model za stanovanja, cenejša od 1500€. Standardna napaka
 novega modela za cenejša stanovanja je samo $ 144 $, kar je veliko manj od
 prvotnega modela. Prirejeni $ R^{2} = 76.14\% $, kar je za samo $ 1.7\% $ bolje
@@ -526,18 +535,20 @@ najemnino 1500€ in več.
 
 \section{Literatura}
 
-[0]
-https://www.distance.to/
-
-[1] Analiza dejavnikov oglaševanih cen rabljenih stanovanj v Ljubljani in njeni
-okolici, Sonja Friškovec, Aleksander Janeš, Univerza na Primorskem, jesen 2010
-
-[2] Dejavniki oblikovanja prodajnih cen stanovanj, Mojca Repič, Ljubljana,
-oktober 2014
-
-[3] \href{https://www.researchgate.net/publication/239329925_A_New_Test_of_Symmetry_about_an_Unknown_Median}
-enačba 11
-
-[4] \href{https://gitlab.com/ul-fri/ovs/projekt/-/blob/master/regresija.pdf}{A}
+\begin{enumerate}
+	\item S. Friškovec, A. Janeš, Analiza dejavnikov oglaševanih cen rabljenih
+		stanovanj v Ljubljani in njeni okolici, Univerza na Primorskem, jesen 2010
+	\item M. Repič, Dejavniki oblikovanja prodajnih cen stanovanj, Ljubljana,
+		oktober 2014
+	\item \href{https://gitlab.com/ul-fri/ovs/projekt/-/blob/master/regresija.pdf}
+		{K. Veljković, Primer statistične obdelave podatkov: linearna regresija}
+	\item J. L. Pagliar JR, J. R. Webb, On Setting Apartment Rental Rates: A
+		Regression-Based Approach, The Journal of Real Estate Research, 1996
+	\item C. A. Thomson, Pricing Apartment Attributes: A Hedonic Analysis of the
+		Dallas/Fort Worth Multifamily Rental Housing Market, University of Florida,
+		september 1999
+	\item \href{https://www.stat.si/statweb/News/Index/7570}{stat.si}
+	\item \href{https://cekin.si/nepremicnine/trnova-pot-do-lastnega-doma-zakaj-mora-biti-tako.html}{cekin.si}
+\end{enumerate}
 
 \end{document}

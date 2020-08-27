@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  27 AUG 2020 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.26)  27 AUG 2020 22:17
 entering extended mode
 **c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex
 (c:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/porocilo/porocilo.tex
@@ -345,162 +345,156 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
  ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (6.39311pt too wide) in paragraph at lines 49--62
+) [1
+
+{C:/Users/dmoho/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (6.39311pt too wide) in paragraph at lines 59--72
 \OT1/cmr/m/n/12 Podatke sem pri-do-bil iz slo-ven-ske sple-tne strani []ne-pre-mic-nine.net[] dne 8.8.2020.
  []
 
-[1
 
-{C:/Users/dmoho/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (25.20946pt too wide) in paragraph at lines 158--166
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+Overfull \hbox (25.20946pt too wide) in paragraph at lines 168--176
  [] 
  []
 
-[3]
-<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png, id=76, 225.84375pt x 175.40532pt>
+[3] [4]
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png, id=81, 225.84375pt x 175.40532pt>
 File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png Graphic file (type png)
 <use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png>
-Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png  used on input line 221.
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png  used on input line 231.
 (pdftex.def)             Requested size: 170.71652pt x 132.59747pt.
-<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png, id=77, 225.84375pt x 175.40532pt>
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png, id=82, 225.84375pt x 175.40532pt>
 File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png Graphic file (type png)
 <use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png>
-Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png  used on input line 226.
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png  used on input line 236.
 (pdftex.def)             Requested size: 170.71652pt x 132.59747pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 220--230
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 230--240
 []$[]$ $[]$ 
  []
 
-<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png, id=78, 225.84375pt x 173.14688pt>
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png, id=83, 225.84375pt x 173.14688pt>
 File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png Graphic file (type png)
 <use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png>
-Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png  used on input line 232.
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png  used on input line 242.
 (pdftex.def)             Requested size: 170.71652pt x 130.89021pt.
-<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png, id=79, 225.84375pt x 173.14688pt>
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png, id=84, 225.84375pt x 173.14688pt>
 File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png Graphic file (type png)
 <use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png>
-Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png  used on input line 237.
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png  used on input line 247.
 (pdftex.def)             Requested size: 170.71652pt x 130.89021pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 231--241
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 241--251
 []$[]$ $[]$ 
  []
 
-[4]
-Overfull \hbox (9.91pt too wide) in paragraph at lines 245--247
+
+Overfull \hbox (9.91pt too wide) in paragraph at lines 255--257
 []\OT1/cmr/m/n/12 Spremenljivka $\OML/cmm/m/it/12 parkirisce$ \OT1/cmr/m/n/12 je dis-kre-tna, zato jo lahko pred-sta-vimo z vzorcnim
  []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 256.
+(hyperref)                removing `\textasciicaron' on input line 266.
 
-[5 <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png>]
-<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png, id=102, 468.24937pt x 359.09157pt>
+[5 <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/letoGradnje_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/povrsina_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/oddaljenost_hist.png> <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/skCena_hist.png>] [6]
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png, id=108, 468.24937pt x 359.09157pt>
 File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png Graphic file (type png)
 <use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png>
-Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png  used on input line 319.
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png  used on input line 329.
 (pdftex.def)             Requested size: 369.88582pt x 283.67374pt.
- [6]
+
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 324.
+(hyperref)                removing `\textasciicaron' on input line 334.
 
 
-Overfull \hbox (8.98122pt too wide) in paragraph at lines 326--329
+Overfull \hbox (8.98122pt too wide) in paragraph at lines 336--339
 \OT1/cmr/m/n/12 Neodvisne spre-men-ljivke nasega mo-deal so $\OML/cmm/m/it/12 letoGradnje; povrsina; oddaljenost$
  []
 
-("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+[7 <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png>] ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang2.sty"
 File: lstlang2.sty 2020/03/24 1.8d listings language file
 ) ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang3.sty"
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 339--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--344
-
- []
-
-
-Overfull \hbox (4.2041pt too wide) in paragraph at lines 346--347
+Overfull \hbox (4.2041pt too wide) in paragraph at lines 354--355
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[7 <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/pairs.png>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 354.
- ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 362.
+("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 354.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 354.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 362.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 362.
  ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 362.
 
-Overfull \hbox (17.34424pt too wide) in paragraph at lines 361--363
+Overfull \hbox (17.34424pt too wide) in paragraph at lines 369--371
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.15706pt too wide) in paragraph at lines 368--375
+Overfull \hbox (0.15706pt too wide) in paragraph at lines 376--383
 []\OT1/cmr/m/n/12 Iz ta-bele ko-e-fi-ci-en-tov (Co-effi-ci-ents) lahko raz-be-remo ko-e-fi-ci-ente nase funk-
  []
 
 
-Overfull \hbox (3.58571pt too wide) in paragraph at lines 376--382
+Overfull \hbox (3.58571pt too wide) in paragraph at lines 384--390
 []\OT1/cmr/m/n/12 Koeficienti spre-men-ljivk $\OML/cmm/m/it/12 letoGradnje; povrsina; oddaljenost$ \OT1/cmr/m/n/12 in $\OML/cmm/m/it/12 parkirisce$
  []
 
-<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png, id=120, 468.24937pt x 359.09157pt>
+[8]
+<C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png, id=147, 468.24937pt x 359.09157pt>
 File: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png Graphic file (type png)
 <use C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png>
-Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png  used on input line 401.
+Package pdftex.def Info: C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png  used on input line 409.
 (pdftex.def)             Requested size: 369.88582pt x 283.67374pt.
-[8]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 418.
+ [9 <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png>]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 426.
  ("C:\Users\dmoho\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmss.fd"
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [9 <C:/Users/dmoho/Documents/FRI/2_letnik_1_semester/VS/slike/diagnosticGraphs.png>] [10] [11]
+) [10] [11]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 515.
+(hyperref)                removing `\textasciicaron' on input line 524.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
 [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 554.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 554.
  (c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 543.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 543.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 554.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 554.
 Package rerunfilecheck Info: File `porocilo.out' has not changed.
 (rerunfilecheck)             Checksum: A5918F0C76373C54D532D7C07C3942BA;653.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 543.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 554.
  ) 
 Here is how much of TeX's memory you used:
- 10783 strings out of 480896
- 163415 string characters out of 2898165
- 617937 words of memory out of 3000000
- 26423 multiletter control sequences out of 15000+200000
+ 10792 strings out of 480896
+ 163474 string characters out of 2898165
+ 616328 words of memory out of 3000000
+ 26424 multiletter control sequences out of 15000+200000
  543691 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,15n,47p,340b,2553s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,15n,47p,340b,2032s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1200.pk> <C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\dmoho\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/dmoho/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.pdf (12 pages, 213035 bytes).
+Output written on c:/Users\dmoho\Documents\FRI\2_letnik_1_semester\VS\porocilo\porocilo.pdf (13 pages, 215518 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
