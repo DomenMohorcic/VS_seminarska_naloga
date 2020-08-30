@@ -14,7 +14,7 @@
 
 \begin{document}
 
-\title{Najemnine v Ljubljani}
+\title{Kaj vpliva na najemnine v Ljubljani?}
 \author{Domen Mohorčič}
 \maketitle
 
@@ -23,14 +23,16 @@
 Ko se povprečen Slovenec odseli od staršev v svoje stanovanje, je star 28,2
 leti. Pred izselitvijo pa si mora stanovanje poiskati. Po navadi ljudje pri izbiri
 stanovanja gledajo na to, ali jim je stanovanje všeč in ali se jim zdi cena
-ustrezna stanovanju. Od česa pa sploh je odvisna cena stanovanja? Friškovec
+ustrezna stanovanju. Od česa pa je sploh odvisna cena stanovanja? Friškovec
 (2010) ugotavlja, da je oglaševalska cena stanovanja pozitivno odvisna od
 površine, števila kopalnic in ali gre za mansardno stanovanje, negativno pa
 predvsem od višine nadstropja. Repič pa je opisala, da je prodajna cena
 stanovanja pozitivno odvisna od prisotnosti dvigala, parkirnega mesta,
 opremljenosti stanovanja, bližine središča Ljubljane in števila sob v
 stanovanju, negativno pa na ceno vplivajo starost stanovanja, površina in
-trajanje, ko je nepremičnina na voljo za prodajo.
+trajanje, ko je nepremičnina na voljo za prodajo. Da pa površina negativno vpliva
+na prodajno ceno, je možno, ker so podatki tudi iz leta 2008, ko je Slovenija
+padla v gospodarsko krizo.
 
 V Ameriki sta leta 1996 raziskavo o dejavnikih najemnine naredila Pagliari
 in Webb. Raziskala sta najemniška stanovanja v predmestju Chicaga in ugotovila,
@@ -38,14 +40,14 @@ da je najemnina pozitivno odvisna od površine, števila kopalnic in ali ima
 stanovanje alarmni sistem, negativno pa predvsem od števila sob in višine
 nadstropja. Podobno raziskavo v Ameriki pa je za Dallas naredil C. A. Thomson
 leta 1999. V svoji magistrski nalogi je pokazal, da je najemnina odvisna od
-starosti, površine in lastnega parkirnega mesta. Zanimivo pa je, da lasten
-bazen negativno vpliva na najemnino.
+starosti, površine in lastnega parkirnega mesta. Zanimivo pa je, da po njegovih
+ugotovitvah lasten bazen negativno vpliva na višino najemnino.
 
 V Sloveniji v najemniških stanovanjih živi le $ 2.4\% $ gospodinjstev.
 Kljub temu je trg najema nepremičnin kar velik, še posebej v Ljubljani (na
-nepremicnine.net je od 1500 oglasov za najem, od tega kar 1000 v Ljubljani),
+nepremicnine.net je 1500 oglasov za najem, od tega se jih kar 1000 nahaja v Ljubljani),
 kjer pa so najbolj zaželjeni študentje ali posamezniki. Nikjer pa nisem
-zasledil slovenske raziskave, ki bi ugotavljala, kaj vpliva na ceno najema.
+zasledil slovenske raziskave, ki bi ugotavljala, kaj vpliva na ceno najema v Sloveniji.
 Če sledim ugotovitvam prej omenjenih raziskav, je najemnina tudi v Sloveniji zelo
 odvisna od površine stanovanja. Za ostale parametre pa ne morem nič reči, saj
 se med raziskavami zelo razlikujejo.
@@ -74,13 +76,12 @@ Pri določanju razdalje sem si pomagal z orodjem
 \href{https://www.distance.to/}{distance.to}. Za analizo podatkov sem uporabil
 program R in urejevalnik \href{https://rstudio.com/}{RStudio}.
 
+\newpage
 \subsection{Opis spremenljivk}
 
 Zbrane podatke sem označil z naslednjimi spremenljivkami:
-\begin{table}[h]
+\begin{table}[H]
 \begin{center}
-\caption{Tabela spremenljivk in njihov opis}
-\label{table:1}
 \begin{tabular}{ c|c}
 	spremenljivka & opis \\
 	\hline
@@ -115,6 +116,8 @@ Zbrane podatke sem označil z naslednjimi spremenljivkami:
 	\hline
 	skCena & Seštevek cene in mesečnih stroškov bivanja \\
 \end{tabular}
+\caption{Tabela spremenljivk in njihov opis}
+\label{table:1}
 \end{center}
 \end{table}
 
@@ -125,17 +128,17 @@ so neodvisne.
 
 Spremenljivko $ letoPrenove $ sem odstranil iz modela, ker za večino
 stanovanj podatka nisem našel. $ nadstropje $ in $ vsaNadstropja $
-sem izvzel, ker pri pregledu oglasov nisem dobil občutka, da bi ti dve
+sem izvzel, ker pri pregledu raziskav nisem dobil občutka, da bi ti dve
 spremenljivki pomembno vplivali na ceno najemnine. Spremenljivko
 $ opremljenost $ sem odstranil, ker je bilo $ 89.3\% $ stanovanj
 opremljenih in tako ni bilo dovolj raznolikosti. Pri pregledu korelacijske
 matrike sem ugotovil, da sta spremenljivki $ povrsina $ in
-$ stSob $ povezani s korelacijskim koeficientom $ 0.811 $ zato sem obdržal
+$ stSob $ povezani s korelacijskim koeficientom $ 0.811 $, zato sem obdržal
 spremenljivko $ povrsina $. Namesto $ stParkirisc $ sem uporabil
 spremenljivko $ parkirisce $, saj je tako bolje predstavljeno, ali ga
 stanovanje ima. Spremenljivko $ zunanjePovrsine $ pa sem  odstranil iz
 modela, ker je imela večina stanovanj samo balkon, redko pa so se pojavili
-velikimi vrtovi.
+veliki vrtovi.
 
 \subsection{Analiza podatkov}
 
@@ -145,6 +148,10 @@ diskretna. Zbral sem podatke o 120 različnih stanovanjih ($ N = 120 $).
 
 Za vsako zvezno spremenljivko sem izračunal povprečje, standardni odklon,
 mediano absolutnih odstopanj od mediane, asimetričnost in sploščenost.
+
+Mediana absolutnih odstopanj od mediane se izračuna tako, da se od mediane
+podatkov izračunajo absolutne vrednosti odstopanj podatkov. Nato se izračuna
+mediano teh odstopanj.
 
 Asimetričnost (skewness) nam pove, kako asimetrični so podatki. Negativna
 vrednost pove, da je rep podatkov na levi (večina podatkov je na desni stran
@@ -163,8 +170,6 @@ standardni odklon (sd), mediana absolutnih odstopanj od mediane (MAD), test
 asimetričnosti (skew) in test sploščenosti (kurt):
 \begin{table}[H]
 \begin{center}
-\caption{Tabela lastnosti spremenljivk}
-\label{table:2}
 \begin{tabular}{ c|cccccccc }
 	& min & max & avg & sd & median & MAD & skew & kurt \\
 	\hline
@@ -173,20 +178,20 @@ asimetričnosti (skew) in test sploščenosti (kurt):
 	oddaljenost & 0.89 & 5.07 & 2.51 & 1.01 & 2.22 & 0.90 & 0.69 & -0.29 \\
 	skCena & 160 & 3700 & 945.86 & 706.03 & 800 & 308.38 & 2.19 & 5.29 \\
 \end{tabular}
+\caption{Tabela lastnosti spremenljivk}
+\label{table:2}
 \end{center}
 \end{table}
 
 Ker pa se vrednosti testa asimetričnosti in sploščenosti razlikujejo od $ 0 $,
 to kaže na nenormalno porazdelitev, in tako nam vrednosti o povprečju ali
 standardnem odklonu povesta bolj malo. Veliko bolj si lahko pomagamo z mediano
-in MAD, saj nam podatka data veliko boljši občutek o tem, kakšni so podatki.
+in MAD, saj nam ti dve vrednosti data veliko boljši občutek o tem, kakšni so podatki.
 Naredil sem še test normalnosti z ukazom {\sf shapiro.test()} (Shapiro-Wilk)
 in test simetričnosti z {\sf symmetry.test()} (MGG):
 
 \begin{table}[H]
 \begin{center}
-\caption{Tabela rezultatov testa normalnosti in simetrije}
-\label{table:3}
 \begin{tabular}{ c|cc|cc }
 	& \multicolumn{2}{c}{Shapiro-Wilk} & \multicolumn{2}{c}{MGG} \\
 	& w value & p value & Test statistics & p value \\
@@ -196,6 +201,8 @@ in test simetričnosti z {\sf symmetry.test()} (MGG):
 	oddaljenost & 0.93178 & 1.244e-05 & 4.4071 & $<$2.2e-16 \\
 	skCena & 0.75813 & 8.857e-13 & 3.9694 & $<$2.2e-16 \\
 \end{tabular}
+\caption{Tabela rezultatov testa normalnosti in simetrije}
+\label{table:3}
 \end{center}
 \end{table}
 
@@ -289,7 +296,7 @@ Pearsonov koeficient korelacije meri linearno odvisnost med dvema
 spremenljivkama in ima vrednost med $ -1 $ in $ 1 $. Če ima vrednost blizu
 $ 1 $, sta spremenljivki pozitivno povezani, če pa ima vrednost blizu $ -1 $,
 sta negativno povezani. Če vrednost znaša $ 0 $, spremenljivki nista
-povezani. Zraven povezanosti pa se pove še moč le te in se opisuje kot šibko,
+povezani. Zraven povezanosti pa se navede še moč le te in se opisuje kot šibko,
 srednjo ali močno glede na absolutno velikost koeficienta.
 V spodnji tabeli so predstavljeni pearsonovi koeficienti korelacije za zvezne
 spremenljivke:
@@ -349,6 +356,7 @@ realne vrednosti pri podanih podatkih.
 Večkratno regresijo sem določil z ukazom \\
 {\sf lm(skCena$\sim$letoGradnje+povrsina+oddaljenost+parkirisce, data=data)}. \\
 Dobil sem naslednje podatke:
+\newpage
 \begin{lstlisting}[language=R,basicstyle=\small,label={lst:1}]
 Call:
 lm(formula = skCena ~ letoGradnje + povrsina + oddaljenost +
@@ -414,14 +422,14 @@ grafi:
 Zgornji levi graf (Residuals vs Fitted) preverja linearnost modela. Prikazuje
 ostanke $ \epsilon_{i} $ (Residuals) v odvisnosti od predvidenih vrednosti. Če točke
 izgledajo naključno razporejene, pomeni, da so napake naključno razporejene in
-naš model je ustrezen. Točke za naš model pa niso naključno porazporejene in
+je naš model ustrezen. Točke za naš model pa niso naključno porazporejene in
 tvorijo funkcijo, ki izgleda negativno linearna. To pomeni, da v našem modelu
 manjka neka funkcija, ki bi te napake odpravila. Naš model zato ni najboljši in
 bi se ga dalo izboljšati z manjkajočo funkcijo.
 
 Zgornji desni graf (Normal Q-Q) prikazuje normalnost porazdelitve
 standardiziranih ostankov. Če točke tvorijo premico, lahko sklepamo, da so
-napake normalno porazdeljene in naš model je v redu. Ker točke na desni strani
+napake normalno porazdeljene in je naš model v redu. Ker točke na desni strani
 zelo odstopajo od premice, napake ne izgledajo normalno porazdeljene. To
 dodatno potrdi rezultat ukaza {\sf shapiro.test(model\$residuals)}, ki hipotezo
 o normalnosti ovrže z w vrednostjo $ 0.91457 $ in s p vrednostjo $ 1.18e-06 $.
@@ -528,10 +536,11 @@ stanovanja, ki ga najemamo. Model opisa cene najemnine pa ni najboljši, saj
 pojasni $ 74.44\% $ variance cene najema, prav tako pa so napake razporejene
 nenaključno, kar nakazuje na mankajočo funkcijo v modelu opisa. Prav tako je
 možno, da v modelu manjka neka neznana zvezna spremenljivka. Ugotovil sem tudi,
-da je možno, da obstajata dva modela opisa najemnine stanovanj, eden za
-luksuzna in drugi za neluksuzna stanovanja. Na to me napeljuje dejstvo, da sem
-dobil veliko boljši opisni model po odstranitvi stanovanj, ki so imela
-najemnino 1500€ in več.
+da po vsej verjetnosti obstajata dva modela opisa najemnine stanovanj. Eden za
+luksuzna stanovanja in drugi za neluksuzna stanovanja. Na to me napeljuje
+dejstvo, da sem dobil veliko boljši opisni model po odstranitvi stanovanj, ki
+so imela najemnino 1500€ in več. Za enoten model med vsemi vrstami stanovanj pa
+najbrž manjka kakšna spremenljivka ali pa je opisni model nelinearen.
 
 \section{Literatura}
 
